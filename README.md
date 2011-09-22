@@ -4,15 +4,14 @@ Test Programs for the PINF JavaScript Platform
 *Status: DEV - Not Functional Yet*
 
 This project contains example JavaScript programs conforming to and building
-on the [CommonJS](http://commonjs.org/) standards. The programs are composed
-of Packages loaded from the 
-[PINF JavaScript Test Packages](https://github.com/pinf/test-package-js) 
+on the [CommonJS](http://commonjs.org/) standards. The programs are made up of
+of Packages loaded via the [PINF JavaScript Loader](https://github.com/pinf/loader-js)
+from the [PINF JavaScript Test Packages](https://github.com/pinf/test-package-js) 
 project and other places around the Internet.
 
-The test programs require any one or more of the following JavaScript platforms.
-You need to install the applicable **platforms** for the programs you want to run:
+The programs require any one or more of the following JavaScript platforms:
 
-  * [NodeJS - Scalable, asynchronous JavaScript network programs](http://nodejs.org/)
+  * [NodeJS](http://nodejs.org/) - Scalable, asynchronous JavaScript network programs
     * TODO: Where else can this be linked to a better install overview?
   * [GPSEE](http://code.google.com/p/gpsee/wiki/Building) - General Purpose Spidermonkey Embedding Ecosystem
     * TODO: Where else can this be linked to a better install overview?
@@ -49,10 +48,11 @@ Test/Example Programs
 
     cd ~/pinf-test-program-js
 
-**Portable**
+Portable
+--------
 
 You can select any of the platforms listed above (`node`, `gpsee`, `ringo`) 
-via `commonjs --platform <name> ...`.
+via `commonjs --platform <PlatformAlias> ./<ProgramName>`.
 
     commonjs ./HelloWorld
 
