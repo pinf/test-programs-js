@@ -1,0 +1,16 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/",
+    "extends": [
+        {
+            "location": "./HelloWorld/program.json"
+        }
+    ],
+    "boot": "github.com/pinf/test-programs-js/",
+    "packages": {
+        "github.com/pinf/test-programs-js/": {
+            "locator": {
+                "location": "./"
+            }
+        }
+    }
+}

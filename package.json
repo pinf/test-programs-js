@@ -26,5 +26,6 @@
             "scope": "docs",
             "type": "CC-BY-NC-SA"
         }
-    ]
+    ],
+    "main": "main.js"
 }

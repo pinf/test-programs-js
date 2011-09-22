@@ -34,28 +34,17 @@ any one of the following install solutions:
     git clone git://github.com/pinf/loader-js.git pinf-loader-js
     alias commonjs='~/pinf-loader-js/pinf-loader.sh'
 
-Finally you need this ([PINF JavaScript Test Programs](https://github.com/pinf/test-programs-js)) project:
-
-    cd ~/
-    wget -O pinf-test-programs-js.tar.gz https://github.com/pinf/test-program-js/tarball/master
-    tar -zxf pinf-test-programs-js.tar.gz -C pinf-test-programs-js
-    
-    cd ~/
-    git clone git://github.com/pinf/test-program-js.git pinf-test-programs-js
-
 
 Test/Example Programs
 =====================
-
-    cd ~/pinf-test-programs-js
 
 Portable
 --------
 
 You can select any of the platforms listed above (`node`, `gpsee`, `ringo`) 
-via `commonjs --platform <PlatformAlias> ./<ProgramName>`.
+via `commonjs --platform <PlatformAlias> ...`.
 
-    commonjs ./HelloWorld
+    commonjs https://github.com/pinf/test-programs-js/zipball/master ./HelloWorld
 
 CONTRIBUTE: If any of the above programs do not work on all platforms please let us know!
 
