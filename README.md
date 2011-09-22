@@ -34,7 +34,7 @@ any one of the following install solutions:
     git clone git://github.com/pinf/loader-js.git pinf-loader-js
     alias commonjs='~/pinf-loader-js/pinf-loader.sh'
 
-Finally you need this project:
+Finally you need this [PINF JavaScript Test Programs](https://github.com/pinf/test-programs-js) project:
 
     cd ~/
     wget -O pinf-test-programs-js.tar.gz https://github.com/pinf/test-program-js/tarball/master
