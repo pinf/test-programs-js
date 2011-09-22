@@ -59,6 +59,30 @@ via `commonjs --platform <PlatformAlias> ./<ProgramName>`.
     commonjs ./HelloWorld
 
 
+Support & Feedback
+==================
+
+Developer mailing list: [http://groups.google.com/group/pinf-dev/](http://groups.google.com/group/pinf-dev/)
+
+
+Contribute
+==========
+
+Collaboration Platform: [https://github.com/pinf/test-programs-js/](https://github.com/pinf/test-programs-js/)
+
+Collaboration Process:
+
+  1. Discuss your change on the mailing list
+  2. Write a patch on your own
+  3. Send pull request on github & ping mailing list
+  4. Discuss pull request on github to refine
+
+You must explicitly license your patch by adding the following to the top of any file you modify
+in order for your patch to be accepted:
+
+    //  - <GithubUsername>, First Last <Email>, Copyright YYYY, MIT License
+
+
 Author
 ======
 
