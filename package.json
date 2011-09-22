@@ -1,0 +1,30 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/",
+    "name": "test-programs-js",
+    "label": "PINF JavaScript Test Packages",
+    "description": "CommonJS portable test programs for JavaScript.",
+    "homepage": "https://github.com/pinf/test-programs-js",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git://github.com/pinf/test-programs-js.git"
+        }
+    ],
+    "maintainers": [
+        {
+            "name": "Christoph Dorn",
+            "email": "christoph@christophdorn.com",
+            "web": "http://www.christophdorn.com/"
+        }
+    ],
+    "licenses": [
+        {
+            "scope": "code",
+            "type": "MIT"
+        },
+        {
+            "scope": "docs",
+            "type": "CC-BY-NC-SA"
+        }
+    ]
+}

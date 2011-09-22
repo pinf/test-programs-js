@@ -6,7 +6,7 @@ Test Programs for the PINF JavaScript Platform
 NOTE: This projects initially targets a UNIX toolchain. Windows support is planned.
 
 This project contains example JavaScript programs conforming to and building
-on the [CommonJS](http://commonjs.org/) standards. The programs are made up of
+on the [CommonJS](http://commonjs.org/) standards. The programs are made up
 of Packages loaded via the [PINF JavaScript Loader](https://github.com/pinf/loader-js)
 from the [PINF JavaScript Test Packages](https://github.com/pinf/test-package-js) 
 project and other places around the Internet.
@@ -22,6 +22,7 @@ The programs require any one or more of the following JavaScript platforms:
 You also need the [PINF JavaScript Loader](https://github.com/pinf/loader-js). Use
 any one of the following install solutions:
 
+    # TODO: Release NPM package with every release of github.com/pinf/loader-js
     npm install pinf-loader-js
     
     cd ~/
@@ -35,20 +36,18 @@ any one of the following install solutions:
 
 Finally you need this project:
 
-    npm install pinf-test-program-js
+    cd ~/
+    wget -O pinf-test-programs-js.tar.gz https://github.com/pinf/test-program-js/tarball/master
+    tar -zxf pinf-test-programs-js.tar.gz -C pinf-test-programs-js
     
     cd ~/
-    wget -O pinf-test-program-js.tar.gz https://github.com/pinf/test-program-js/tarball/master
-    tar -zxf pinf-test-program-js.tar.gz -C pinf-test-program-js
-    
-    cd ~/
-    git clone git://github.com/pinf/test-program-js.git pinf-test-program-js
+    git clone git://github.com/pinf/test-program-js.git pinf-test-programs-js
 
 
 Test/Example Programs
 =====================
 
-    cd ~/pinf-test-program-js
+    cd ~/pinf-test-programs-js
 
 Portable
 --------
@@ -57,6 +56,8 @@ You can select any of the platforms listed above (`node`, `gpsee`, `ringo`)
 via `commonjs --platform <PlatformAlias> ./<ProgramName>`.
 
     commonjs ./HelloWorld
+
+CONTRIBUTE: If any of the above programs do not work on all platforms please let us know!
 
 
 Support & Feedback

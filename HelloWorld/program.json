@@ -1,0 +1,16 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/HelloWorld/",
+    "boot": "github.com/pinf/test-programs-js/HelloWorld/",
+    "packages": {
+        "github.com/pinf/test-programs-js/HelloWorld/": {
+            "locator": {
+                "location": "./"
+            }
+        },
+        "github.com/pinf/test-packages-js/": {
+            "locator": {
+                "archive": "https://github.com/pinf/test-packages-js/zipball/master"
+            }
+        }
+    }
+}
