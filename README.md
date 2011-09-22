@@ -1,7 +1,8 @@
 Test Programs for the PINF JavaScript Platform
 ==============================================
 
-*Status: DEV - Not Functional Yet*
+*Status: DEV - Currently only works with the `node` platform to download dependencies. Once a program
+has been run once with `node` it can be run with `gpsee` and `ringo`.*
 
 NOTE: This projects initially targets a UNIX toolchain. Windows support is planned.
 
