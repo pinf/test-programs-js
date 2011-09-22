@@ -39,6 +39,9 @@ any one of the following install solutions:
 Test/Example Programs
 =====================
 
+CONTRIBUTE: If any of the programs below do not work on the indicated platforms please 
+[let us know](http://groups.google.com/group/pinf-dev/)!
+
 Portable
 --------
 
@@ -48,8 +51,6 @@ via `commonjs --platform <PlatformAlias> ...`.
 A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld):
 
     commonjs https://github.com/pinf/test-programs-js/zipball/master ./HelloWorld
-
-CONTRIBUTE: If any of the above programs do not work on all platforms please let us know!
 
 
 Support & Feedback
