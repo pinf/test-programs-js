@@ -17,7 +17,7 @@ The programs require any one or more of the following JavaScript platforms:
     * TODO: Where else can this be linked to a better install overview?
   * [GPSEE](http://code.google.com/p/gpsee/wiki/Building) - General Purpose Spidermonkey Embedding Ecosystem
     * TODO: Where else can this be linked to a better install overview?
-  * [RingoJS](http://ringojs.org/downloads) - JavaScript runtime based on the Mozilla Rhino (Java)
+  * [RingoJS](http://ringojs.org/downloads) - JavaScript runtime based on Mozilla Rhino (Java)
 
 You also need the [PINF JavaScript Loader](https://github.com/pinf/loader-js). Use
 any one of the following install solutions:
