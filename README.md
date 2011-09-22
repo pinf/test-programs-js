@@ -45,6 +45,8 @@ Portable
 You can select any of the platforms listed above (`node`, `gpsee`, `ringo`) 
 via `commonjs --platform <PlatformAlias> ...`.
 
+A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld):
+
     commonjs https://github.com/pinf/test-programs-js/zipball/master ./HelloWorld
 
 CONTRIBUTE: If any of the above programs do not work on all platforms please let us know!
