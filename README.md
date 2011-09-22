@@ -3,6 +3,8 @@ Test Programs for the PINF JavaScript Platform
 
 *Status: DEV - Not Functional Yet*
 
+NOTE: This projects initially targets a UNIX toolchain. Windows support is planned.
+
 This project contains example JavaScript programs conforming to and building
 on the [CommonJS](http://commonjs.org/) standards. The programs are made up of
 of Packages loaded via the [PINF JavaScript Loader](https://github.com/pinf/loader-js)
