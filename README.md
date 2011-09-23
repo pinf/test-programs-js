@@ -58,6 +58,22 @@ Simple [Command-line script](https://github.com/pinf/test-programs-js/tree/maste
     commonjs https://github.com/pinf/test-programs-js/zipball/master ./SimpleCLI
 
 
+Automated Testing
+=================
+
+The programs in this project make a great test suite for platforms. The following will run
+all programs against available and applicable platforms:
+
+    commonjs --script test https://github.com/pinf/test-programs-js/zipball/master
+
+
+TODO
+====
+
+  * Get portable programs working on `gpsee` and `ringo` without downloading dependencies with `node` first.
+  * Example program leveraging [SASS](http://sass-lang.com/) at a module and package level.
+
+
 Support & Feedback
 ==================
 

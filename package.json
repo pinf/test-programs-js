@@ -27,5 +27,18 @@
             "type": "CC-BY-NC-SA"
         }
     ],
-    "main": "main.js"
+    "main": "main.js",
+    "scripts": {
+        "test": {
+            "id": "github.com/pinf/test-js/"
+        }
+    },
+    "mappings": {
+        "pinf": {
+            "id": "pinf.org/loader"
+        },
+        "modules": {
+            "id": "github.com/pinf/modules-js/"
+        }
+    }
 }
