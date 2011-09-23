@@ -9,7 +9,7 @@ NOTE: This projects initially targets a UNIX toolchain. Windows support is plann
 This project contains example JavaScript programs conforming to and building
 on the [CommonJS](http://commonjs.org/) standards. The programs are made up
 of Packages loaded via the [PINF JavaScript Loader](https://github.com/pinf/loader-js)
-from the [PINF JavaScript Test Packages](https://github.com/pinf/test-package-js) 
+from the [PINF JavaScript Test Packages](https://github.com/pinf/test-packages-js) 
 project and other places around the Internet.
 
 The programs require any one or more of the following JavaScript platforms:

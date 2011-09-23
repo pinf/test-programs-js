@@ -1,4 +1,15 @@
 
+    $ commonjs https://github.com/pinf/test-programs-js/zipball/master ./SimpleCLI
+    Error: No URL specified!
+    
+    Usage: script [OPTIONS] URL
+    Request a given URL and display result
+     -v --verbose: Enable debug output and progress messages
+     --show-headers: Show the response headers
+     --trim-body-to TRIM-BODY-TO: Length of body to show (characters)
+     -h --help: Display usage information
+
+
     $ commonjs https://github.com/pinf/test-programs-js/zipball/master ./SimpleCLI http://www.google.com/
     Status: 302
     Body (218 characters):
