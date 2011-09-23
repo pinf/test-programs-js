@@ -1,0 +1,34 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/SimpleCLI/",
+    "name": "SimpleCLI",
+    "label": "SimpleCLI Test Program",
+    "homepage": "https://github.com/pinf/test-programs-js/SimpleCLI/",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git://github.com/pinf/test-programs-js.git",
+            "path": "SimpleCLI"
+        }
+    ],
+    "maintainers": [
+        {
+            "name": "Christoph Dorn",
+            "email": "christoph@christophdorn.com",
+            "web": "http://www.christophdorn.com/"
+        }
+    ],
+    "licenses": [
+        {
+            "scope": "code",
+            "type": "MIT"
+        },
+        {
+            "scope": "docs",
+            "type": "CC-BY-NC-SA"
+        }
+    ],
+    "main": "main.js",
+    "mappings": {
+        "modules": "github.com/pinf/modules-js/"
+    }
+}

@@ -52,6 +52,10 @@ A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/
 
     commonjs https://github.com/pinf/test-programs-js/zipball/master ./HelloWorld
 
+Simple [Command-line script](https://github.com/pinf/test-programs-js/tree/master/SimpleCLI):
+
+    commonjs https://github.com/pinf/test-programs-js/zipball/master ./SimpleCLI
+
 
 Support & Feedback
 ==================

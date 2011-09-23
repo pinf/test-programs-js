@@ -1,0 +1,35 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/SimpleCLI/",
+    "boot": "github.com/pinf/test-programs-js/SimpleCLI/",
+    "packages": {
+        "github.com/pinf/test-programs-js/SimpleCLI/": {
+            "locator": {
+                "location": "./"
+            }
+        },
+        "pinf.org/loader": {
+            "provider": "pinf.org/loader"
+        },
+        "nodejs.org": {
+            "provider": "nodejs.org"
+        },
+        "github.com/pinf/modules-js/": {
+            "locator": {
+                "archive": "https://github.com/pinf/modules-js/zipball/v0.1.9"
+            }
+        },
+        "github.com/kriskowal/q/": {
+            "locator": {
+                "archive": "https://github.com/kriskowal/q/zipball/v0.3.0"
+            },
+            "descriptor": {
+                "uid": "https://github.com/kriskowal/q/",
+                "dependencies": [
+                    {
+                        "id": "github.com/pinf/modules-js/"
+                    }
+                ]
+            }
+        }
+    }
+}

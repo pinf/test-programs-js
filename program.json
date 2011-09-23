@@ -3,6 +3,9 @@
     "extends": [
         {
             "location": "./HelloWorld/program.json"
+        },
+        {
+            "location": "./SimpleCLI/program.json"
         }
     ],
     "boot": "github.com/pinf/test-programs-js/",
