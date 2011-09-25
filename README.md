@@ -43,11 +43,12 @@ Test/Example Programs
 CONTRIBUTE: If any of the programs below do not work on the indicated platforms please 
 [let us know](http://groups.google.com/group/pinf-dev/)!
 
-Portable
---------
+Portable CLI
+------------
 
-You can select any of the platforms listed above (`node`, `gpsee`, `ringo`) 
-via `commonjs --platform <PlatformAlias> ...`.
+Programs that run from the command line.
+
+You can select any of `node`, `gpsee` or `ringo` via `commonjs --platform <PlatformAlias> ...`.
 
 A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld):
 
@@ -56,6 +57,20 @@ A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/
 Simple command-line [URL Fetcher](https://github.com/pinf/test-programs-js/tree/master/URLFetcher):
 
     commonjs https://github.com/pinf/test-programs-js/zipball/master ./URLFetcher
+
+
+Browser
+-------
+
+Programs that run in the browser in exported form.
+
+A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld):
+
+    commonjs --script export https://github.com/pinf/test-programs-js/zipball/master HelloWorld HelloWorld/exported
+    open http://.../HelloWorld/exported/index.sample.html
+    # Look for "Hello World" in browser console.
+
+    
 
 
 Automated Testing

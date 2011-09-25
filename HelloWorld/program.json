@@ -1,6 +1,11 @@
 {
     "uid": "http://github.com/pinf/test-programs-js/HelloWorld/",
     "boot": "github.com/pinf/test-programs-js/HelloWorld/",
+    "contexts": {
+        "top": {
+            "github.com/pinf/test-programs-js/HelloWorld/": {}
+        }
+    },
     "packages": {
         "github.com/pinf/test-programs-js/HelloWorld/": {
             "locator": {

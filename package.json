@@ -31,6 +31,9 @@
     "scripts": {
         "test": {
             "id": "github.com/pinf/test-js/"
+        },
+        "export": {
+            "id": "github.com/pinf/loader-js/"
         }
     },
     "mappings": {
