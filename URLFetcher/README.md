@@ -1,5 +1,5 @@
 
-    $ commonjs https://github.com/pinf/test-programs-js/zipball/master ./SimpleCLI
+    $ commonjs https://github.com/pinf/test-programs-js/zipball/master ./URLFetcher
     Error: No URL specified!
     
     Usage: script [OPTIONS] URL
@@ -10,7 +10,7 @@
      -h --help: Display usage information
 
 
-    $ commonjs https://github.com/pinf/test-programs-js/zipball/master ./SimpleCLI http://www.google.com/
+    $ commonjs https://github.com/pinf/test-programs-js/zipball/master ./URLFetcher http://www.google.com/
     Status: 302
     Body (218 characters):
     <HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
@@ -24,9 +24,9 @@
     DONE
 
 
-    $ commonjs -v https://github.com/pinf/test-programs-js/zipball/master ./SimpleCLI -v http://www.google.com/
+    $ commonjs -v https://github.com/pinf/test-programs-js/zipball/master ./URLFetcher -v http://www.google.com/
     ----------------------------------------------------------------------------
-    |  PINF Loader v0.0.2  ~  https://github.com/pinf/loader-js/
+    |  PINF Loader v0.2.5  ~  https://github.com/pinf/loader-js/
     ----------------------------------------------------------------------------
     Loaded adapter: node
     Boot cache directory: /pinf/pinf_packages
@@ -45,7 +45,35 @@
         ID: github.com/pinf/test-programs-js/
           ID: github.com/pinf/test-programs-js/
           Path: /pinf/workspaces/github.com/pinf/test-programs-js/
-          Mappings: None
+          Mappings:
+            pinf <- {"id":"pinf.org/loader"}
+              ID: pinf.org/loader
+              Path: pinf.org/loader
+              ... skip second pass ...
+            modules <- {"id":"github.com/pinf/modules-js/"}
+              ID: github.com/pinf/modules-js/
+              Path: /pinf/workspaces/github.com/pinf/modules-js/
+              HashID: 52402775D376B5C5239F9D5D9C5D4E0A
+              Mappings:
+                pinf <- {"id":"pinf.org/loader","available":true}
+                  ID: pinf.org/loader
+                  Path: pinf.org/loader
+                  ... skip second pass ...
+                q <- {"id":"github.com/kriskowal/q/"}
+                  ID: github.com/kriskowal/q/
+                  Path: /pinf/pinf_packages/downloads/packages/github.com/kriskowal/q/zipball/v0.3.0~pkg/
+                  HashID: D6C8365630D42325D4197919BAAA7416
+                  Mappings: None
+                  Dependencies:
+                    [0] <- {"id":"github.com/pinf/modules-js/"}
+                      ID: github.com/pinf/modules-js/
+                      Path: /pinf/workspaces/github.com/pinf/modules-js/
+                      ... skip second pass ...
+                nodejs <- {"id":"nodejs.org"}
+                  ID: nodejs.org
+                  Path: nodejs.org
+                  ... skip second pass ...
+              Dependencies: None
           Dependencies: None
     Loading program's main packages:
       /pinf/pinf_packages/downloads/packages/github.com/pinf/test-programs-js/zipball/master~pkg/
@@ -53,37 +81,18 @@
     ----- /pinf/pinf_packages/downloads/packages/github.com/pinf/test-programs-js/zipball/master~pkg -> [package.json].main -> main() -----
     =====><=====
     Load additional package into program:
-      Locator(original): {"location":"/pinf/workspaces/github.com/pinf/test-programs-js/./SimpleCLI"}
-      Locator(resolved): {"location":"/pinf/workspaces/github.com/pinf/test-programs-js/SimpleCLI/"}
+      Locator(original): {"location":"/pinf/workspaces/github.com/pinf/test-programs-js/./URLFetcher"}
+      Locator(resolved): {"location":"/pinf/workspaces/github.com/pinf/test-programs-js/URLFetcher/"}
       Mappings:
         modules <- {"id":"github.com/pinf/modules-js/"}
           ID: github.com/pinf/modules-js/
           Path: /pinf/workspaces/github.com/pinf/modules-js/
           HashID: 52402775D376B5C5239F9D5D9C5D4E0A
-          Mappings:
-            pinf <- {"id":"pinf.org/loader","available":true}
-              ID: pinf.org/loader
-              Path: pinf.org/loader
-              ... skip second pass ...
-            q <- {"id":"github.com/kriskowal/q/"}
-              ID: github.com/kriskowal/q/
-              Path: /pinf/pinf_packages/downloads/packages/github.com/kriskowal/q/zipball/v0.3.0~pkg/
-              HashID: D6C8365630D42325D4197919BAAA7416
-              Mappings: None
-              Dependencies:
-                [0] <- {"id":"github.com/pinf/modules-js/"}
-                  ID: github.com/pinf/modules-js/
-                  Path: /pinf/workspaces/github.com/pinf/modules-js/
-                  ... skip second pass ...
-            nodejs <- {"id":"nodejs.org"}
-              ID: nodejs.org
-              Path: nodejs.org
-              ... skip second pass ...
-          Dependencies: None
+          ... skip second pass ...
       Dependencies: None
     <=====
     ----- ^ -------------------------------------------------------------------------------------------------------------------------------
-    Program Booted  ~  Timing (Assembly: 0.283, Load: 0.012, Boot: 0.052, Additional Load: 0)
+    Program Booted  ~  Timing (Assembly: 0.289, Load: 0.011, Boot: 0.015, Additional Load: 0)
     ----- | Program stdout & stderr follows (if not already terminated) ====>
     URL: http://www.google.com/
     Parsed Arguments: { args: [ 'http://www.google.com/' ],
@@ -114,8 +123,8 @@
     Headers: { location: 'http://www.google.ca/',
       'cache-control': 'private',
       'content-type': 'text/html; charset=UTF-8',
-      'set-cookie': [ 'PREF=ID=093b4c3d3c3d91be:FF=0:TM=1316736553:LM=1316736553:S=ICL2sSMDtvd_bkC0; expires=Sun, 22-Sep-2013 00:09:13 GMT; path=/; domain=.google.com' ],
-      date: 'Fri, 23 Sep 2011 00:09:13 GMT',
+      'set-cookie': [ 'PREF=ID=56fc2cf3f955399c:FF=0:TM=1316976257:LM=1316976257:S=dRVrwygIQwZwVHiY; expires=Tue, 24-Sep-2013 18:44:17 GMT; path=/; domain=.google.com' ],
+      date: 'Sun, 25 Sep 2011 18:44:17 GMT',
       server: 'gws',
       'content-length': '218',
       'x-xss-protection': '1; mode=block',

@@ -53,9 +53,9 @@ A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/
 
     commonjs https://github.com/pinf/test-programs-js/zipball/master ./HelloWorld
 
-Simple [Command-line script](https://github.com/pinf/test-programs-js/tree/master/SimpleCLI):
+Simple command-line [URL Fetcher](https://github.com/pinf/test-programs-js/tree/master/URLFetcher):
 
-    commonjs https://github.com/pinf/test-programs-js/zipball/master ./SimpleCLI
+    commonjs https://github.com/pinf/test-programs-js/zipball/master ./URLFetcher
 
 
 Automated Testing

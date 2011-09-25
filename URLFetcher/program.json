@@ -1,8 +1,8 @@
 {
-    "uid": "http://github.com/pinf/test-programs-js/SimpleCLI/",
-    "boot": "github.com/pinf/test-programs-js/SimpleCLI/",
+    "uid": "http://github.com/pinf/test-programs-js/URLFetcher/",
+    "boot": "github.com/pinf/test-programs-js/URLFetcher/",
     "packages": {
-        "github.com/pinf/test-programs-js/SimpleCLI/": {
+        "github.com/pinf/test-programs-js/URLFetcher/": {
             "locator": {
                 "location": "./"
             }

@@ -1,13 +1,13 @@
 {
-    "uid": "http://github.com/pinf/test-programs-js/SimpleCLI/",
-    "name": "SimpleCLI",
-    "label": "SimpleCLI Test Program",
-    "homepage": "https://github.com/pinf/test-programs-js/SimpleCLI/",
+    "uid": "http://github.com/pinf/test-programs-js/URLFetcher/",
+    "name": "URLFetcher",
+    "label": "URLFetcher Test Program",
+    "homepage": "https://github.com/pinf/test-programs-js/URLFetcher/",
     "repositories": [
         {
             "type": "git",
             "url": "git://github.com/pinf/test-programs-js.git",
-            "path": "SimpleCLI"
+            "path": "URLFetcher"
         }
     ],
     "maintainers": [

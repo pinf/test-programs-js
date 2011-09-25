@@ -5,7 +5,7 @@
             "location": "./HelloWorld/program.json"
         },
         {
-            "location": "./SimpleCLI/program.json"
+            "location": "./URLFetcher/program.json"
         }
     ],
     "boot": "github.com/pinf/test-programs-js/",
