@@ -18,8 +18,7 @@ exports["test run portable node"] = function(ASSERT, harness)
 	}
 
 	return harness.global.runPrograms("node", [
-        "HelloWorld",
-        ["SimpleCLI", "http://www.google.com/"]
+        ["URLFetcher", "http://www.google.com/"]
 	]);
 }
 
@@ -30,11 +29,12 @@ exports["test run portable gpsee"] = function(ASSERT, harness)
 		module.print("\0yellow(Skipping! Platform not detected!\0)\n");
 		return;
 	}
-	
+
+/*
 	return harness.global.runPrograms("gpsee", [
-        "HelloWorld",
-//        ["SimpleCLI", "http://www.google.com/"]
+        ["SimpleCLI", "http://www.google.com/"]
    	]);
+*/
 }
 
 exports["test run portable ringo"] = function(ASSERT, harness)
@@ -45,8 +45,9 @@ exports["test run portable ringo"] = function(ASSERT, harness)
 		return;
 	}
 
+/*	
 	return harness.global.runPrograms("ringo", [
-        "HelloWorld",
-//        ["SimpleCLI", "http://www.google.com/"]
+        ["SimpleCLI", "http://www.google.com/"]
    	]);
+*/
 }
