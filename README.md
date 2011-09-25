@@ -54,6 +54,10 @@ A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/
 
     commonjs https://github.com/pinf/test-programs-js/zipball/master ./HelloWorld
 
+[Additional code loading](https://github.com/pinf/test-programs-js/tree/master/AdditionalLoad):
+
+    commonjs https://github.com/pinf/test-programs-js/zipball/master ./AdditionalLoad
+
 Simple command-line [URL Fetcher](https://github.com/pinf/test-programs-js/tree/master/URLFetcher):
 
     commonjs https://github.com/pinf/test-programs-js/zipball/master ./URLFetcher
@@ -68,9 +72,13 @@ A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/
 
     commonjs --script export https://github.com/pinf/test-programs-js/zipball/master HelloWorld HelloWorld/exported
     open http://.../HelloWorld/exported/index.sample.html
-    # Look for "Hello World" in browser console.
+    # Look for messages in browser console.
 
-    
+[Additional code loading](https://github.com/pinf/test-programs-js/tree/master/AdditionalLoad):
+
+    commonjs --script export https://github.com/pinf/test-programs-js/zipball/master AdditionalLoad AdditionalLoad/exported
+    open http://.../AdditionalLoad/exported/index.sample.html
+    # Look for messages in browser console.
 
 
 Automated Testing
@@ -79,15 +87,19 @@ Automated Testing
 The programs in this project make a great test suite for platforms. The following will run
 all programs against available and applicable platforms:
 
-    commonjs --script test https://github.com/pinf/test-programs-js/zipball/master portable-HelloWorld.js
+    # All tests
     commonjs --script test https://github.com/pinf/test-programs-js/zipball/master 
+    
+    # Specific test
+    commonjs --script test https://github.com/pinf/test-programs-js/zipball/master portable-HelloWorld.js
 
 
 TODO
 ====
 
   * Get portable programs working on `gpsee` and `ringo` without downloading dependencies with `node` first.
-  * Example program leveraging [SASS](http://sass-lang.com/) at a module and package level.
+  * Get exported HelloWorld program working on `node`, `gpsee` and `ringo`.
+  * Example program leveraging [SASS](http://sass-lang.com/).
 
 
 Support & Feedback

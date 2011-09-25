@@ -1,0 +1,21 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/AdditionalLoad/",
+    "boot": "github.com/pinf/test-programs-js/AdditionalLoad/",
+    "contexts": {
+        "top": {
+            "github.com/pinf/test-programs-js/AdditionalLoad/": {}
+        }
+    },
+    "packages": {
+        "github.com/pinf/test-programs-js/AdditionalLoad/": {
+            "locator": {
+                "location": "./"
+            }
+        },
+        "github.com/pinf/test-packages-js/": {
+            "locator": {
+                "archive": "https://github.com/pinf/test-packages-js/zipball/master"
+            }
+        }
+    }
+}

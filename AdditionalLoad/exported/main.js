@@ -5,7 +5,7 @@ bravojs.url = window.location.protocol + '//' + window.location.host + '/main.js
 bravojs.url = location;
 }
 bravojs.mainModuleDir = /^(https?|resource):\/(.*?)\.js$/.exec(bravojs.url)[2];
-bravojs.mainContext = bravojs.mainModuleDir + '/FCBB1058ADD4BF0E01413E32D98E5EBD';
+bravojs.mainContext = bravojs.mainModuleDir + '/BA6A0DF9FE469BA68B149A2CF1308230';
 bravojs.platform = 'browser';
 function dump() { (bravojs.dump || bravojs.print).apply(null, arguments); };
 
@@ -2590,30 +2590,43 @@ bravojs.module.constructor.prototype.load = function packages_loader_load(module
 
 })();
 
-require.memoize(bravojs.realpath(bravojs.mainModuleDir + '/FCBB1058ADD4BF0E01413E32D98E5EBD@/package.json'), [], function() { return {"uid":"http://github.com/pinf/test-programs-js/HelloWorld/","name":"HelloWorld","label":"HelloWorld Test Program","homepage":"https://github.com/pinf/test-programs-js/HelloWorld/","repositories":[{"type":"git","url":"git://github.com/pinf/test-programs-js.git","path":"HelloWorld"}],"maintainers":[{"name":"Christoph Dorn","email":"christoph@christophdorn.com","web":"http://www.christophdorn.com/"}],"licenses":[{"scope":"code","type":"MIT"},{"scope":"docs","type":"CC-BY-NC-SA"}],"main":"main.js","mappings":{"common":{"path":"Common","location":"" + bravojs.mainModuleDir + "/9D7CFD608F80B8F27F4D1C00FBE87895","uid":"github.com/pinf/test-packages-js/Common/"}}}; });
-require.memoize(bravojs.realpath(bravojs.mainModuleDir + '/FCBB1058ADD4BF0E01413E32D98E5EBD@/main'), ['common/greetings'], function (require, exports, module) {
-
-var GREETINGS = require("common/greetings");
+require.memoize(bravojs.realpath(bravojs.mainModuleDir + '/BA6A0DF9FE469BA68B149A2CF1308230@/package.json'), [], function() { return {"uid":"http://github.com/pinf/test-programs-js/AdditionalLoad/","name":"AdditionalLoad","label":"AdditionalLoad Test Program","homepage":"https://github.com/pinf/test-programs-js/AdditionalLoad/","repositories":[{"type":"git","url":"git://github.com/pinf/test-programs-js.git","path":"AdditionalLoad"}],"maintainers":[{"name":"Christoph Dorn","email":"christoph@christophdorn.com","web":"http://www.christophdorn.com/"}],"licenses":[{"scope":"code","type":"MIT"},{"scope":"docs","type":"CC-BY-NC-SA"}],"main":"main.js","mappings":{"common":{"path":"Common","location":"" + bravojs.mainModuleDir + "/9D7CFD608F80B8F27F4D1C00FBE87895"}},"contexts":{"top":{"/main":{"load":{"/additional":{}}}}}}; });
+require.memoize(bravojs.realpath(bravojs.mainModuleDir + '/BA6A0DF9FE469BA68B149A2CF1308230@/main'), [], function (require, exports, module) {
 
 exports.main = function(env)
 {
-    module.print(GREETINGS.helloWorld() + "\n");
+    module.print("Hello World from AdditionalLoad" + "\n");
+
+    
+    module.print("Load extra module from our package ..." + "\n");
+
+    module.load(require.id("./additional", true), function(id)
+    {
+        module.print("... extra module from our package loaded!" + "\n");
+
+        var ADDITIONAL = require(id);
+
+        module.print("Greeting from extra module from our package: " + ADDITIONAL.getGreeting() + "\n");
+    });
+
+    
+/*    
+    // TODO: This does not work yet when exporting program
+
+    module.print("Load extra module from external package ..." + "\n");
+    module.load("common/greetings", function(id)
+    {
+        module.print("... extra module from external package loaded!" + "\n");
+    });
+*/
+
 }
 
 });
 require.memoize(bravojs.realpath(bravojs.mainModuleDir + '/9D7CFD608F80B8F27F4D1C00FBE87895@/package.json'), [], function() { return {"uid":"http://github.com/pinf/test-packages-js/Common/","name":"Common","description":"CommonJS portable test packages for JavaScript.","homepage":"https://github.com/pinf/test-packages-js/Common/","repositories":[{"type":"git","url":"git://github.com/pinf/test-packages-js.git","path":"Common"}],"maintainers":[{"name":"Christoph Dorn","email":"christoph@christophdorn.com","web":"http://www.christophdorn.com/"}],"licenses":[{"scope":"code","type":"MIT"},{"scope":"docs","type":"CC-BY-NC-SA"}]}; });
-require.memoize(bravojs.realpath(bravojs.mainModuleDir + '/9D7CFD608F80B8F27F4D1C00FBE87895@/lib/greetings'), [], function (require, exports, module) {
-
-exports.helloWorld = function()
-{
-    // TODO: Different strings based on default OS language via `require("system").lang`
-    return "Hello World";
-}
-
-});
 (function() {
 var env = {};
-module.declare([{"_package-0":{"id":"FCBB1058ADD4BF0E01413E32D98E5EBD"}}], function(require, exports, module) {
+module.declare([{"_package-0":{"id":"BA6A0DF9FE469BA68B149A2CF1308230"}}], function(require, exports, module) {
 require('_package-0').main(env);
 });
 })();

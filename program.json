@@ -6,6 +6,9 @@
         },
         {
             "location": "./URLFetcher/program.json"
+        },
+        {
+            "location": "./AdditionalLoad/program.json"
         }
     ],
     "boot": "github.com/pinf/test-programs-js/",
