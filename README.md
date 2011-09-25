@@ -64,7 +64,8 @@ Automated Testing
 The programs in this project make a great test suite for platforms. The following will run
 all programs against available and applicable platforms:
 
-    commonjs --script test https://github.com/pinf/test-programs-js/zipball/master
+    commonjs --script test https://github.com/pinf/test-programs-js/zipball/master portable-HelloWorld.js
+    commonjs --script test https://github.com/pinf/test-programs-js/zipball/master 
 
 
 TODO
