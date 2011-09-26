@@ -14,12 +14,9 @@ project and other places around the Internet.
 
 The programs require any one or more of the following JavaScript platforms:
 
-  * [NodeJS](http://nodejs.org/) - Scalable, asynchronous JavaScript network programs
-    * TODO: Where else can this be linked to a better install overview?
+  * [NodeJS](http://nodejs.org/) - Scalable, asynchronous JavaScript network programs (**Currently required at minimum**)
   * [GPSEE](http://code.google.com/p/gpsee/wiki/Building) - General Purpose Spidermonkey Embedding Ecosystem
-    * TODO: Where else can this be linked to a better install overview?
   * [RingoJS](http://ringojs.org/downloads) - JavaScript runtime based on Mozilla Rhino (Java)
-    * TODO: Where else can this be linked to a better install overview?
 
 You also need the [PINF JavaScript Loader](https://github.com/pinf/loader-js). Use
 any one of the following install solutions:
@@ -50,15 +47,18 @@ Programs that run from the command line.
 
 You can select any of `node`, `gpsee` or `ringo` via `commonjs --platform <PlatformAlias> ...`.
 
-A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld):
+**NOTE:** These programs currently only run reliably on `node`. They should somewhat run on the other platforms
+but there are definitely still some platform-level bugs to be resolved.**
+
+A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld) with a dependency:
 
     commonjs https://github.com/pinf/test-programs-js/zipball/master ./HelloWorld
 
-[Additional code loading](https://github.com/pinf/test-programs-js/tree/master/AdditionalLoad):
+[Additional code loading](https://github.com/pinf/test-programs-js/tree/master/AdditionalLoad) with a dependency:
 
     commonjs https://github.com/pinf/test-programs-js/zipball/master ./AdditionalLoad
 
-Simple command-line [URL Fetcher](https://github.com/pinf/test-programs-js/tree/master/URLFetcher):
+Simple command-line [URL Fetcher](https://github.com/pinf/test-programs-js/tree/master/URLFetcher) (**Currently only works on `node` due to missing APIs on other platforms.**):
 
     commonjs https://github.com/pinf/test-programs-js/zipball/master ./URLFetcher
 
@@ -68,13 +68,13 @@ Browser
 
 Programs that run in the browser in exported form.
 
-A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld):
+A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld) with a dependency:
 
     commonjs --script export https://github.com/pinf/test-programs-js/zipball/master HelloWorld HelloWorld/exported
     open http://.../HelloWorld/exported/index.sample.html
     # Look for messages in browser console.
 
-[Additional code loading](https://github.com/pinf/test-programs-js/tree/master/AdditionalLoad):
+[Additional code loading](https://github.com/pinf/test-programs-js/tree/master/AdditionalLoad) with a dependency:
 
     commonjs --script export https://github.com/pinf/test-programs-js/zipball/master AdditionalLoad AdditionalLoad/exported
     open http://.../AdditionalLoad/exported/index.sample.html
@@ -106,6 +106,23 @@ Support & Feedback
 ==================
 
 Developer mailing list: [http://groups.google.com/group/pinf-dev/](http://groups.google.com/group/pinf-dev/)
+
+
+TODO
+====
+
+Priority: High
+--------------
+
+  * Get portable programs working on `gpsee` and `ringo` without downloading dependencies with `node` first.
+    * Resolve platform level bugs.
+    * Complete adapters: [https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter)
+  * Get exported HelloWorld program working on `node`, `gpsee` and `ringo`.
+
+Priority: Low
+-------------
+
+  * Example program leveraging [SASS](http://sass-lang.com/).
 
 
 Contribute
