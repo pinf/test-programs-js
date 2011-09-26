@@ -94,12 +94,16 @@ all programs against available and applicable platforms:
     commonjs --script test https://github.com/pinf/test-programs-js/zipball/master portable-HelloWorld.js
 
 
-TODO
-====
+Development
+===========
 
-  * Get portable programs working on `gpsee` and `ringo` without downloading dependencies with `node` first.
-  * Get exported HelloWorld program working on `node`, `gpsee` and `ringo`.
-  * Example program leveraging [SASS](http://sass-lang.com/).
+To make changes to a dependency and use your local copy when running the program place the dependency's
+package into `/pinf/workspaces/<UID>`. For example:
+
+    cd /pinf/workspaces/github.com/pinf/
+    git clone git://github.com/pinf/test-programs-js.git test-programs-js
+
+The loader will automatically detect the package via its *UID* and use the local source.
 
 
 Support & Feedback
