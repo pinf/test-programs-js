@@ -1,10 +1,10 @@
 Test Programs for the PINF JavaScript Platform
 ==============================================
 
-*Status: DEV - Currently only works with the `node` platform to download dependencies. Once a program
-has been run once with `node` it can be run with `gpsee` and `ringo`.*
+**Status: DEV - Currently only works with the `node` platform to download dependencies. Once a program
+has been run once with `node` it can be run with `gpsee` and `ringo`.**
 
-NOTE: This projects initially targets a UNIX toolchain. Windows support is planned.
+**NOTE: This projects initially targets a UNIX toolchain. Windows support is planned.**
 
 This project contains example JavaScript programs conforming to and building
 on the [CommonJS](http://commonjs.org/) standards. The programs are made up
@@ -17,12 +17,13 @@ The programs require any one or more of the following JavaScript platforms:
   * [NodeJS](http://nodejs.org/) - Scalable, asynchronous JavaScript network programs (**Currently required at minimum**)
   * [GPSEE](http://code.google.com/p/gpsee/wiki/Building) - General Purpose Spidermonkey Embedding Ecosystem
   * [RingoJS](http://ringojs.org/downloads) - JavaScript runtime based on Mozilla Rhino (Java)
+  * Modern Browser
 
 You also need the [PINF JavaScript Loader](https://github.com/pinf/loader-js). Use
 any one of the following install solutions:
 
     # TODO: Release NPM package with every release of github.com/pinf/loader-js
-    npm install pinf-loader-js
+    # npm install pinf-loader-js
     
     cd ~/
     wget -O pinf-loader-js.tar.gz https://github.com/pinf/loader-js/tarball/master
@@ -47,7 +48,7 @@ Programs that run from the command line.
 
 You can select any of `node`, `gpsee` or `ringo` via `commonjs --platform <PlatformAlias> ...`.
 
-**NOTE:** These programs currently only run reliably on `node`. They should somewhat run on the other platforms
+**NOTE: These programs currently only run reliably on `node`. They should somewhat run on the other platforms
 but there are definitely still some platform-level bugs to be resolved.**
 
 A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld) with a dependency:
@@ -90,7 +91,7 @@ Automated Testing
 =================
 
 The programs in this project make a great test suite for platforms. The following will run
-all programs against available and applicable platforms:
+various programs against available and applicable platforms:
 
     # All tests
     commonjs --script test https://github.com/pinf/test-programs-js/zipball/master 
@@ -102,13 +103,21 @@ all programs against available and applicable platforms:
 Development
 ===========
 
-To make changes to a dependency and use your local copy when running the program place the dependency's
+To make changes to a dependency and use your local copy when running the program, place the dependency's
 package into `/pinf/workspaces/<UID>`. For example:
+
+    cd /pinf/workspaces/github.com/pinf/
+    git clone git://github.com/pinf/test-packages-js.git test-packages-js
+
+The loader will automatically detect the package via its *UID* and use the local source.
+
+If you have cloned this `test-programs-js` project and want to run it from source:
 
     cd /pinf/workspaces/github.com/pinf/
     git clone git://github.com/pinf/test-programs-js.git test-programs-js
 
-The loader will automatically detect the package via its *UID* and use the local source.
+Replace `https://github.com/pinf/test-programs-js/zipball/master` with `/pinf/workspaces/github.com/pinf/test-programs-js`
+in the commands above.
 
 
 Support & Feedback
