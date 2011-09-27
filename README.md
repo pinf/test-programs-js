@@ -52,21 +52,21 @@ but there are definitely still some platform-level bugs to be resolved.**
 
 A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld) with a dependency:
 
-    commonjs https://github.com/pinf/test-programs-js/zipball/master ./HelloWorld
+    commonjs https://github.com/pinf/test-programs-js/zipball/master HelloWorld
 
 [Additional code loading](https://github.com/pinf/test-programs-js/tree/master/AdditionalLoad) with a dependency:
 
-    commonjs https://github.com/pinf/test-programs-js/zipball/master ./AdditionalLoad
+    commonjs https://github.com/pinf/test-programs-js/zipball/master AdditionalLoad
 
 Simple command-line [URL Fetcher](https://github.com/pinf/test-programs-js/tree/master/URLFetcher) (**Currently only works on `node` due to missing APIs on other platforms.**):
 
-    commonjs https://github.com/pinf/test-programs-js/zipball/master ./URLFetcher
+    commonjs https://github.com/pinf/test-programs-js/zipball/master URLFetcher
 
 
 Browser
 -------
 
-Programs that run in the browser in exported form.
+Programs that run in the browser in exported form (**Currently requires `node` to export or serve due to missing APIs on other platforms.**).
 
 A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld) with a dependency:
 
@@ -122,6 +122,11 @@ Priority: High
     * Resolve platform level bugs.
     * Complete adapters: [https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter)
   * Get exported HelloWorld program working on `node`, `gpsee` and `ringo`.
+
+Priority: Medium
+----------------
+
+  * Performance tuning of PINF JavaScript Loader on `ringo`.
 
 Priority: Low
 -------------

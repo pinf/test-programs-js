@@ -1,32 +1,5 @@
 {
     "uid": "http://github.com/pinf/test-programs-js/HelloWorld/",
-    "name": "HelloWorld",
-    "label": "HelloWorld Test Program",
-    "homepage": "https://github.com/pinf/test-programs-js/HelloWorld/",
-    "repositories": [
-        {
-            "type": "git",
-            "url": "git://github.com/pinf/test-programs-js.git",
-            "path": "HelloWorld"
-        }
-    ],
-    "maintainers": [
-        {
-            "name": "Christoph Dorn",
-            "email": "christoph@christophdorn.com",
-            "web": "http://www.christophdorn.com/"
-        }
-    ],
-    "licenses": [
-        {
-            "scope": "code",
-            "type": "MIT"
-        },
-        {
-            "scope": "docs",
-            "type": "CC-BY-NC-SA"
-        }
-    ],
     "main": "main.js",
     "mappings": {
         "common": {
