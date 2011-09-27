@@ -27,7 +27,8 @@ any one of the following install solutions:
     
     cd ~/
     wget -O pinf-loader-js.tar.gz https://github.com/pinf/loader-js/tarball/master
-    tar -zxf pinf-loader-js.tar.gz -C pinf-loader-js
+    tar -zxf pinf-loader-js.tar.gz
+    mv pinf-loader-js-* pinf-loader-js
     alias commonjs='~/pinf-loader-js/pinf-loader.sh'
     
     cd ~/
