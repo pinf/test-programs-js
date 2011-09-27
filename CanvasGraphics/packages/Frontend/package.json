@@ -1,0 +1,12 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/CanvasGraphics/packages/Frontend/",
+    "main": "main.js",
+    "mappings": {
+        "jquery": {
+            "id": "code.jquery.com/"
+        },
+        "raphaeljs": {
+            "id": "raphaeljs.com/"
+        }
+    }
+}

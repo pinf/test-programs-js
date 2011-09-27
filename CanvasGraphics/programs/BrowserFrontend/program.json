@@ -1,0 +1,36 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/CanvasGraphics/programs/BrowserFrontend/",
+    "boot": "github.com/pinf/test-programs-js/CanvasGraphics/packages/Frontend/",
+    "contexts": {
+        "top": {
+            "github.com/pinf/test-programs-js/CanvasGraphics/packages/Frontend/": {}
+        }
+    },
+    "packages": {
+        "github.com/pinf/test-programs-js/CanvasGraphics/packages/Frontend/": {
+            "locator": {
+                "location": "../../packages/Frontend"
+            }
+        },
+        "code.jquery.com/": {
+            "locator": {
+                "location": "http://code.jquery.com/jquery-1.6.4.min.js"
+            },
+            "descriptor": {
+                "uid": "http://code.jquery.com/",
+                "directories": false
+            }
+        },
+        "raphaeljs.com/":
+        {
+            "locator": {
+                "archive": "https://github.com/DmitryBaranovskiy/raphael/zipball/dbe241f4c5310dd9bf3b451c538d78c6c4a0e288",
+                "resource": true
+            },
+            "descriptor": {
+                "uid": "http://raphaeljs.com/",
+                "main": "raphael-min.js"
+            }
+        }
+    }
+}

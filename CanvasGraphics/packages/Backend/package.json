@@ -1,0 +1,8 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/CanvasGraphics/packages/Backend/",
+    "mappings": {
+        "modules": {
+            "id": "github.com/pinf/modules-js/"
+        }
+    }
+}

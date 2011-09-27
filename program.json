@@ -2,6 +2,9 @@
     "uid": "http://github.com/pinf/test-programs-js/",
     "extends": [
         {
+            "location": "https://raw.github.com/pinf/server-js/v0.1.15/program.packages.json"
+        },
+        {
             "location": "./HelloWorld/program.json"
         },
         {
@@ -9,6 +12,9 @@
         },
         {
             "location": "./AdditionalLoad/program.json"
+        },
+        {
+            "location": "./CanvasGraphics/program.json"
         }
     ],
     "boot": "github.com/pinf/test-programs-js/",
@@ -51,6 +57,11 @@
         "github.com/pinf/loader-js/": {
             "locator": {
                 "archive": "http://github.com/pinf/loader-js/zipball/v0.2.5"
+            }
+        },
+        "github.com/pinf/server-js/": {
+            "locator": {
+                "archive": "https://github.com/pinf/server-js/zipball/v0.1.15"
             }
         }
     }

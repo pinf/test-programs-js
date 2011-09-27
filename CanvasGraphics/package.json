@@ -1,0 +1,24 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/CanvasGraphics/",
+    "engines": [
+        "node"
+    ],
+    "main": "server.js",
+    "mappings": {
+        "pinf": {
+            "id": "pinf.org/loader"
+        },
+        "modules": {
+            "id": "github.com/pinf/modules-js/"
+        },
+        "server": {
+            "id": "github.com/pinf/server-js/"
+        },
+        "connect-dispatch": {
+            "id": "github.com/caolan/dispatch/"
+        },
+        "backend": {
+            "id": "github.com/pinf/test-programs-js/CanvasGraphics/packages/Backend/"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Canvas Graphics Demo</title>
+        <script type="text/javascript">
+            var bravojs = {
+                url: window.location.protocol + "//" + 
+                     ((window.location.host)?window.location.host:"") + 
+                     ((window.location.pathname)?window.location.pathname.replace(/\/[^\/]*$/, "/programs/ui.js"):"")
+            };
+            document.write('<script type="text/javascript" id="BravoJS" src="' + bravojs.url + '"><' + '/script>');
+        </script>
+        <style>
+            BODY, P {
+                font-family: Verdana,Helvetica,Arial,sans-serif;
+                font-size: 10px;
+            }
+            #status {
+                display: inline;
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="#" onClick="require(bravojs.mainContext + '@/main').loadNewData()">Load new data</a>
+            <div id="status"></div>
+        </div>
+
+        <div id="content">Loading Canvas Graphics Demo ...</div>
+
+    </body>
+</html>

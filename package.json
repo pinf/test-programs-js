@@ -34,6 +34,9 @@
         },
         "export": {
             "id": "github.com/pinf/loader-js/"
+        },
+        "serve": {
+            "id": "github.com/pinf/server-js/"
         }
     },
     "mappings": {

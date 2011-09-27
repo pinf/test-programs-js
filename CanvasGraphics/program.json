@@ -1,0 +1,60 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/CanvasGraphics/",
+    "engines": [
+        "node"
+    ],
+    "boot": "github.com/pinf/test-programs-js/CanvasGraphics/",
+    "contexts": {
+        "top": {
+            "github.com/pinf/test-programs-js/CanvasGraphics/": {}
+        }
+    },
+    "implements": {
+        "github.com/pinf/server-js/-meta/strawman/vhost/0.1": {
+        }
+    },
+    "packages": {
+        "github.com/pinf/test-programs-js/CanvasGraphics/": {
+            "locator": {
+                "location": "./"
+            }
+        },
+        "github.com/pinf/test-programs-js/CanvasGraphics/packages/Backend/": {
+            "locator": {
+                "location": "./packages/Backend"
+            }
+        },
+        "github.com/pinf/server-js/": {
+            "locator": {
+                "archive": "https://github.com/pinf/server-js/zipball/v0.1.15"
+            }
+        },
+        "github.com/caolan/dispatch/": {
+            "locator": {
+                "archive": "https://github.com/caolan/dispatch/zipball/master"
+            },
+            "descriptor": {
+                "native": true
+            }
+        },
+        "github.com/pinf/modules-js/": {
+            "locator": {
+                "archive": "https://github.com/pinf/modules-js/zipball/v0.1.10"
+            }
+        },
+        "github.com/kriskowal/q/": {
+            "locator": {
+                "archive": "https://github.com/kriskowal/q/zipball/v0.3.0"
+            },
+            "descriptor": {
+                "uid": "https://github.com/kriskowal/q/",
+                "dependencies": [
+                    {
+                        "id": "github.com/pinf/modules-js/"
+                    }
+                ],
+                "engines": "*"  
+            }
+        }
+    }
+}
