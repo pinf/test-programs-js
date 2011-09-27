@@ -136,16 +136,22 @@ Priority: High
   * Get portable programs working on `gpsee` and `ringo` without downloading dependencies with `node` first.
     * Resolve platform level bugs.
     * Complete adapters: [https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter)
-  * Get exported HelloWorld program working on `node`, `gpsee` and `ringo`.
+  * Remove NPM dependency from CanvasGraphics example so we can make it portable.
+  * `node` specific demos (with and without leveraging NPM)
+  * `gpsee` specific demos
+  * `ringo` specific demos
+  * JSGI demos
+  * CommonJS API demos
 
 Priority: Medium
 ----------------
 
-  * Performance tuning of PINF JavaScript Loader on `ringo`.
+  * Get exported HelloWorld program working on `node`, `gpsee` and `ringo`.
 
 Priority: Low
 -------------
 
+  * Performance tuning of PINF JavaScript Loader on `ringo`.
   * Example program leveraging [SASS](http://sass-lang.com/).
 
 
