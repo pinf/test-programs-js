@@ -51,9 +51,6 @@ Programs that run from the command line.
 
 You can select any of `node`, `gpsee`, `v8cgi`, `narwhal` or `ringo` via `commonjs --platform <PlatformAlias> ...`.
 
-**NOTE: These programs currently only run reliably on `node`. They should somewhat run on the other platforms
-but there are definitely still some platform-level bugs to be resolved.**
-
 A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld) with a dependency:
 
     commonjs https://github.com/pinf/test-programs-js/zipball/master HelloWorld
