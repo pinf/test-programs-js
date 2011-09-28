@@ -67,7 +67,7 @@ Simple command-line [URL Fetcher](https://github.com/pinf/test-programs-js/tree/
 Browser
 -------
 
-Programs that run in the browser in exported form (**Currently requires `node` to export or serve due to missing APIs on other platforms.**).
+Programs that run in the browser in exported form (**Currently requires `node` to export or serve due to incomplete API adapters for other platforms.**).
 
 A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld) with a dependency:
 
