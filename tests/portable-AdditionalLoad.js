@@ -9,41 +9,31 @@ exports.run = function(ASSERT, harness)
 }
 
 
-exports["test run portable node"] = function(ASSERT, harness)
-{
-	if (!harness.global.platforms.node)
-	{
-		module.print("\0yellow(Skipping! Platform not detected!\0)\n");
-		return;
-	}
+var platforms = [
+         "node",
+         "gpsee",
+         "v8cgi",
+         "narwhal",
+         "ringo"
+     ];
 
-	return harness.global.runPrograms("node", [
-        "AdditionalLoad"
-	]);
+for (var i=0 ; i<platforms.length ; i++)
+{
+	registerTest(platforms[i]);
 }
 
-exports["test run portable gpsee"] = function(ASSERT, harness)
+function registerTest(platformAlias)
 {
-	if (!harness.global.platforms.gpsee)
+	exports["test run portable " + platformAlias] = function(ASSERT, harness)
 	{
-		module.print("\0yellow(Skipping! Platform not detected!\0)\n");
-		return;
-	}
+		if (!harness.global.platforms[platformAlias])
+		{
+			module.print("\0yellow(Skipping! Platform '" + platformAlias + "' not detected!\0)\n");
+			return;
+		}
 	
-	return harness.global.runPrograms("gpsee", [
-        "AdditionalLoad"
-   	]);
-}
-
-exports["test run portable ringo"] = function(ASSERT, harness)
-{
-	if (!harness.global.platforms.ringo)
-	{
-		module.print("\0yellow(Skipping! Platform not detected!\0)\n");
-		return;
+		return harness.global.runPrograms(platformAlias, [
+	        "AdditionalLoad"
+		]);
 	}
-
-	return harness.global.runPrograms("ringo", [
-        "AdditionalLoad"
-   	]);
 }

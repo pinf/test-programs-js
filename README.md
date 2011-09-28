@@ -1,14 +1,14 @@
 Test Programs for the PINF JavaScript Platform
 ==============================================
 
-**Status: DEV - Currently only works with the `node` platform to download dependencies. Once a program
-has been run once with `node` it can be run with `gpsee` and `ringo`.**
+**Status: ALPHA - Currently only works with the `node` platform to download dependencies. Once a program
+has been run once with `node` it can be run with the other CLI platforms.**
 
 **NOTE: This projects initially targets a UNIX toolchain. Windows support is planned.**
 
 This project contains example JavaScript programs conforming to and building
 on the [CommonJS](http://commonjs.org/) standards. The programs are made up
-of Packages loaded via the [PINF JavaScript Loader](https://github.com/pinf/loader-js)
+of packages loaded via the [PINF JavaScript Loader](https://github.com/pinf/loader-js)
 from the [PINF JavaScript Test Packages](https://github.com/pinf/test-packages-js) 
 project and other places around the Internet.
 
@@ -16,6 +16,8 @@ The programs require any one or more of the following JavaScript platforms:
 
   * [NodeJS](http://nodejs.org/) - Scalable, asynchronous JavaScript network programs (**Currently required at minimum**)
   * [GPSEE](http://code.google.com/p/gpsee/wiki/Building) - General Purpose Spidermonkey Embedding Ecosystem
+  * [v8cgi](http://code.google.com/p/v8cgi) - CGI wrapper around V8 JavaScript engine
+  * [Narwhal](https://github.com/cappuccino/narwhal) - Cross-platform, multi-interpreter, general purpose JavaScript platform
   * [RingoJS](http://ringojs.org/downloads) - JavaScript runtime based on Mozilla Rhino (Java)
   * Modern Browser
 
@@ -47,7 +49,7 @@ Portable CLI
 
 Programs that run from the command line.
 
-You can select any of `node`, `gpsee` or `ringo` via `commonjs --platform <PlatformAlias> ...`.
+You can select any of `node`, `gpsee`, `v8cgi`, `narwhal` or `ringo` via `commonjs --platform <PlatformAlias> ...`.
 
 **NOTE: These programs currently only run reliably on `node`. They should somewhat run on the other platforms
 but there are definitely still some platform-level bugs to be resolved.**
@@ -95,7 +97,7 @@ The programs in this project make a great test suite for platforms. The followin
 various programs against available and applicable platforms:
 
     # All tests
-    commonjs --script test https://github.com/pinf/test-programs-js/zipball/master 
+    commonjs --script test https://github.com/pinf/test-programs-js/zipball/master
     
     # Specific test
     commonjs --script test https://github.com/pinf/test-programs-js/zipball/master portable-HelloWorld.js
@@ -133,20 +135,23 @@ TODO
 Priority: High
 --------------
 
-  * Get portable programs working on `gpsee` and `ringo` without downloading dependencies with `node` first.
+  * Get portable programs working on all platforms without downloading dependencies with `node` first.
     * Resolve platform level bugs.
     * Complete adapters: [https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter)
   * Remove NPM dependency from CanvasGraphics example so we can make it portable.
   * `node` specific demos (with and without leveraging NPM)
   * `gpsee` specific demos
+  * `v8cgi` specific demos
+  * `narwhal` specific demos
   * `ringo` specific demos
   * JSGI demos
   * CommonJS API demos
+    * http://olegp.github.com/common-node/
 
 Priority: Medium
 ----------------
 
-  * Get exported HelloWorld program working on `node`, `gpsee` and `ringo`.
+  * Get exported HelloWorld program working on all platforms.
 
 Priority: Low
 -------------

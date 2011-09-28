@@ -21,33 +21,3 @@ exports["test run portable node"] = function(ASSERT, harness)
         ["URLFetcher", "http://www.google.com/"]
 	]);
 }
-
-exports["test run portable gpsee"] = function(ASSERT, harness)
-{
-	if (!harness.global.platforms.gpsee)
-	{
-		module.print("\0yellow(Skipping! Platform not detected!\0)\n");
-		return;
-	}
-
-/*
-	return harness.global.runPrograms("gpsee", [
-        ["SimpleCLI", "http://www.google.com/"]
-   	]);
-*/
-}
-
-exports["test run portable ringo"] = function(ASSERT, harness)
-{
-	if (!harness.global.platforms.ringo)
-	{
-		module.print("\0yellow(Skipping! Platform not detected!\0)\n");
-		return;
-	}
-
-/*	
-	return harness.global.runPrograms("ringo", [
-        ["SimpleCLI", "http://www.google.com/"]
-   	]);
-*/
-}

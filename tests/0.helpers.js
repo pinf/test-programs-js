@@ -44,17 +44,13 @@ exports.runProgram = function(platformAlias, programName)
 
 		switch(platformAlias)
 		{
-			case "node":
-				command += " " + loaderPath;
-				break;
 			case "gpsee":
 				command += " -f " + loaderPath + " --";
-				break;
-			case "ringo":
+			default:
 				command += " " + loaderPath;
 				break;
 		}
-		
+
 		command += " " + programsPath + "/";
 		
 		if (UTIL.isArrayLike(programName))

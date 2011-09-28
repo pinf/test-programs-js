@@ -19,6 +19,16 @@ exports["test find platform gpsee"] = function(ASSERT, harness)
 	return runPlatformTest("GPSEE", "gsr", "gpsee", harness);
 }
 
+exports["test find platform v8cgi"] = function(ASSERT, harness)
+{
+	return runPlatformTest("v8cgi", "v8cgi", "v8cgi", harness);
+}
+
+exports["test find platform narwhal"] = function(ASSERT, harness)
+{
+	return runPlatformTest("Narwhal", "narwhal", "narwhal", harness);
+}
+
 exports["test find platform ringo"] = function(ASSERT, harness)
 {
 	return runPlatformTest("RingoJS", "ringo", "ringo", harness);
