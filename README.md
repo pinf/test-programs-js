@@ -59,6 +59,10 @@ A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/
 
     commonjs https://github.com/pinf/test-programs-js/zipball/master AdditionalLoad
 
+[JSLint Benchmark](https://github.com/pinf/test-programs-js/tree/master/JSLintBenchmark):
+
+    commonjs https://github.com/pinf/test-programs-js/zipball/master JSLintBenchmark
+
 Simple command-line [URL Fetcher](https://github.com/pinf/test-programs-js/tree/master/URLFetcher) (**Currently only works on `node` due to missing APIs on other platforms.**):
 
     commonjs https://github.com/pinf/test-programs-js/zipball/master URLFetcher

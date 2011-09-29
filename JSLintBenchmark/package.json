@@ -1,0 +1,9 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/JSLintBenchmark/",
+    "main": "main.js",
+    "mappings": {
+        "jslint": {
+            "id": "github.com/cadorn/JSLint/"
+        }
+    }
+}

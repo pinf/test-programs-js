@@ -8,10 +8,13 @@
             "location": "./HelloWorld/program.json"
         },
         {
-            "location": "./URLFetcher/program.json"
+            "location": "./AdditionalLoad/program.json"
         },
         {
-            "location": "./AdditionalLoad/program.json"
+            "location": "./JSLintBenchmark/program.json"
+        },
+        {
+            "location": "./URLFetcher/program.json"
         },
         {
             "location": "./CanvasGraphics/program.json"
