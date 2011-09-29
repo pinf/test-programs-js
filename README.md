@@ -85,6 +85,12 @@ A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/
     open http://.../AdditionalLoad/exported/index.sample.html
     # Look for messages in browser console.
 
+[JSLint Benchmark](https://github.com/pinf/test-programs-js/tree/master/JSLintBenchmark):
+
+    commonjs --script export https://github.com/pinf/test-programs-js/zipball/master JSLintBenchmark JSLintBenchmark/exported
+    open http://.../JSLintBenchmark/exported/index.sample.html
+    # Look for messages in browser console.
+
 [Canvas Graphics](https://github.com/pinf/test-programs-js/tree/master/CanvasGraphics) with plain JavaScript library dependency:
 
     commonjs --script serve https://github.com/pinf/test-programs-js/zipball/master --reloading --port 8081 CanvasGraphics
