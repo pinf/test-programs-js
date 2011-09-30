@@ -24,18 +24,21 @@ The programs require any one or more of the following JavaScript platforms:
 You also need the [PINF JavaScript Loader](https://github.com/pinf/loader-js). Use
 any one of the following install solutions:
 
-    # TODO: Release NPM package with every release of github.com/pinf/loader-js
-    # npm install pinf-loader-js
-    
+    npm install -g pinf-loader-js
+
     cd ~/
     wget -O pinf-loader-js.tar.gz https://github.com/pinf/loader-js/tarball/master
     tar -zxf pinf-loader-js.tar.gz
     mv pinf-loader-js-* pinf-loader-js
     alias commonjs='~/pinf-loader-js/pinf-loader.sh'
-    
+
     cd ~/
     git clone git://github.com/pinf/loader-js.git pinf-loader-js
     alias commonjs='~/pinf-loader-js/pinf-loader.sh'
+
+Make sure it works:
+
+    commonjs -h
 
 
 Test/Example Programs
