@@ -16,7 +16,7 @@ The programs require any one or more of the following JavaScript platforms:
   * [NodeJS](http://nodejs.org/) - Scalable, asynchronous JavaScript network programs (**Currently required at minimum and used by default**)
   * [GPSEE](http://code.google.com/p/gpsee/wiki/Building) - General Purpose Spidermonkey Embedding Ecosystem
   * [v8cgi](http://code.google.com/p/v8cgi) - CGI wrapper around V8 JavaScript engine
-  * [Narwhal](https://github.com/cappuccino/narwhal) - Cross-platform, multi-interpreter, general purpose JavaScript platform
+  * [Narwhal](https://github.com/280north/narwhal) - Cross-platform, multi-interpreter, general purpose JavaScript platform
   * [RingoJS](http://ringojs.org/downloads) - JavaScript runtime based on Mozilla Rhino (Java)
   * Modern Browser
 

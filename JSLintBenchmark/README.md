@@ -1,9 +1,9 @@
 
-    $ commonjs https://github.com/pinf/test-programs-js/zipball/master ./JSLintBenchmark
+    $ commonjs https://github.com/pinf/test-programs-js/zipball/master JSLintBenchmark
     Running JSLint Benchmark by running JSLint against itself ...
     ... took: 1.692 seconds
 
-    $ commonjs -v https://github.com/pinf/test-programs-js/zipball/master ./JSLintBenchmark
+    $ commonjs -v https://github.com/pinf/test-programs-js/zipball/master JSLintBenchmark
     ----------------------------------------------------------------------------
     |  PINF Loader v0.2.9  ~  https://github.com/pinf/loader-js/
     ----------------------------------------------------------------------------

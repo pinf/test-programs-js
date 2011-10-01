@@ -1,5 +1,5 @@
 
-    $ commonjs https://github.com/pinf/test-programs-js/zipball/master ./URLFetcher
+    $ commonjs https://github.com/pinf/test-programs-js/zipball/master URLFetcher
     Error: No URL specified!
     
     Usage: script [OPTIONS] URL
@@ -10,7 +10,7 @@
      -h --help: Display usage information
 
 
-    $ commonjs https://github.com/pinf/test-programs-js/zipball/master ./URLFetcher http://www.google.com/
+    $ commonjs https://github.com/pinf/test-programs-js/zipball/master URLFetcher http://www.google.com/
     Status: 302
     Body (218 characters):
     <HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
@@ -24,7 +24,7 @@
     DONE
 
 
-    $ commonjs -v https://github.com/pinf/test-programs-js/zipball/master ./URLFetcher -v http://www.google.com/
+    $ commonjs -v https://github.com/pinf/test-programs-js/zipball/master URLFetcher -v http://www.google.com/
     ----------------------------------------------------------------------------
     |  PINF Loader v0.2.5  ~  https://github.com/pinf/loader-js/
     ----------------------------------------------------------------------------

@@ -1,9 +1,9 @@
 
-    $ commonjs https://github.com/pinf/test-programs-js/zipball/master ./HelloWorld
+    $ commonjs https://github.com/pinf/test-programs-js/zipball/master HelloWorld
     Hello World
 
 
-    $ commonjs -v https://github.com/pinf/test-programs-js/zipball/master ./HelloWorld
+    $ commonjs -v https://github.com/pinf/test-programs-js/zipball/master HelloWorld
     ----------------------------------------------------------------------------
     |  PINF Loader v0.0.2  ~  https://github.com/pinf/loader-js/
     ----------------------------------------------------------------------------
