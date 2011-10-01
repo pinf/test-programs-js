@@ -15,8 +15,8 @@
         "github.com/cadorn/JSLint/":
         {
             "locator": {
-                "archive": "https://github.com/cadorn/JSLint/zipball/69bb4bcda303d7d124dfdfde1929be327582da66",
-                "resource": "true"
+                "archive": "https://github.com/cadorn/JSLint/zipball/dbecbf62023bbefa82c3fe88f6c2975a39071066",
+                "resource": true
             },
             "descriptor": {
                 "uid": "http://github.com/cadorn/JSLint/",
