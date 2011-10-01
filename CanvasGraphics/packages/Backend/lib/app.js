@@ -5,6 +5,8 @@ exports.app = function(app)
 {
 	return function(env)
     {
+		module.print("Sending fresh data.\n");
+
 		var data = {
 			"Ruby": Math.floor(Math.random()*41),
 	        "JavaScript": 0,
