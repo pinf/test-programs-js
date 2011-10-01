@@ -1,0 +1,19 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/ModuleSourceFormats/",
+    "main": "main.js",
+    "contexts": {
+        "top": {
+            "/main": {
+                "load": {
+                    "/lib/*": {
+                    }
+                }
+            }
+        }
+    },
+    "mappings": {
+        "modules": {
+            "id": "github.com/pinf/modules-js/"
+        }
+    }
+}

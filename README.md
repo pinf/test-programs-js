@@ -74,6 +74,10 @@ A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/
 
     commonjs https://github.com/pinf/test-programs-js/zipball/master JSLintBenchmark
 
+[Module Source Formats](https://github.com/pinf/test-programs-js/tree/master/ModuleSourceFormats):
+
+    commonjs https://github.com/pinf/test-programs-js/zipball/master ModuleSourceFormats
+
 
 Browser
 -------
