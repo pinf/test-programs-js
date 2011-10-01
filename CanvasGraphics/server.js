@@ -38,4 +38,6 @@ exports.main = function(options)
     		})
     	)
     );
+
+    module.print("Program server started! You can now browse to: http://localhost:" + options.port + "/\n");
 }

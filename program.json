@@ -35,7 +35,7 @@
         },
         "github.com/pinf/modules-js/": {
             "locator": {
-                "archive": "https://github.com/pinf/modules-js/zipball/v0.1.10"
+                "archive": "https://github.com/pinf/modules-js/zipball/v0.1.11"
             }
         },
         "github.com/kriskowal/q/": {
@@ -59,7 +59,7 @@
         },
         "github.com/pinf/loader-js/": {
             "locator": {
-                "archive": "http://github.com/pinf/loader-js/zipball/v0.2.15"
+                "archive": "http://github.com/pinf/loader-js/zipball/v0.2.16"
             }
         },
         "github.com/pinf/server-js/": {

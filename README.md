@@ -1,8 +1,7 @@
 Test Programs for the PINF JavaScript Platform
 ==============================================
 
-**Status: ALPHA - Currently only works with the `node` platform to download dependencies. Once a program
-has been run once with `node` it can be run with the other CLI platforms.**
+**Status: BETA**
 
 **NOTE: This projects initially targets a UNIX toolchain. Windows support is planned.**
 
@@ -44,13 +43,18 @@ Make sure it works:
 Test/Example Programs
 =====================
 
-CONTRIBUTE: If any of the programs below do not work on the indicated platforms please 
-[let us know](http://groups.google.com/group/pinf-dev/)!
+CONTRIBUTE: If any of the programs below do not work on the indicated platforms on your system please 
+[let us know](http://groups.google.com/group/pinf-dev/)! You can also help complete the
+[API adapters](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter) to bring full
+support to all platforms (where possible).
 
 Portable CLI
 ------------
 
-Programs that run from the command line.
+Programs that run from the command line on all platforms.
+
+**NOTE: Currently requires running with `--platform node` (default) ONCE first to download dependencies due to incomplete 
+[API adapters](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter) for the other platforms.**
 
 You can select any of `node`, `gpsee`, `v8cgi`, `narwhal` or `ringo` via `commonjs --platform <PlatformAlias> ...`.
 
@@ -74,43 +78,49 @@ Simple command-line [URL Fetcher](https://github.com/pinf/test-programs-js/tree/
 Browser
 -------
 
-Programs that run in the browser in exported form (**Currently requires `node` to export or serve due to incomplete API adapters for other platforms.**).
+*NOTE: The exporting or serving of these programs is currently only supported on `--platform node` due to incomplete 
+[API adapters](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter) for the other platforms.* 
 
-A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld) with a dependency:
+Programs that run in the browser in exported form (`http://.../` below refers to a virtual host setup to serve the exported files):
 
-    commonjs --script export https://github.com/pinf/test-programs-js/zipball/master HelloWorld HelloWorld/exported
-    open http://.../HelloWorld/exported/index.sample.html
-    # Look for messages in browser console.
+  * A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld) with a dependency:
 
-[Additional code loading](https://github.com/pinf/test-programs-js/tree/master/AdditionalLoad) with a dependency:
+        commonjs --platform node --script export https://github.com/pinf/test-programs-js/zipball/master HelloWorld HelloWorld/exported
+        open http://.../HelloWorld/exported/index.sample.html
+        # Look for messages in browser console.
 
-    commonjs --script export https://github.com/pinf/test-programs-js/zipball/master AdditionalLoad AdditionalLoad/exported
-    open http://.../AdditionalLoad/exported/index.sample.html
-    # Look for messages in browser console.
+  * [Additional code loading](https://github.com/pinf/test-programs-js/tree/master/AdditionalLoad) with a dependency:
 
-[JSLint Benchmark](https://github.com/pinf/test-programs-js/tree/master/JSLintBenchmark):
+        commonjs --platform node --script export https://github.com/pinf/test-programs-js/zipball/master AdditionalLoad AdditionalLoad/exported
+        open http://.../AdditionalLoad/exported/index.sample.html
+        # Look for messages in browser console.
 
-    commonjs --script export https://github.com/pinf/test-programs-js/zipball/master JSLintBenchmark JSLintBenchmark/exported
-    open http://.../JSLintBenchmark/exported/index.sample.html
-    # Look for messages in browser console.
+  * [JSLint Benchmark](https://github.com/pinf/test-programs-js/tree/master/JSLintBenchmark):
 
-[Canvas Graphics](https://github.com/pinf/test-programs-js/tree/master/CanvasGraphics) with plain JavaScript library dependency:
+        commonjs --platform node --script export https://github.com/pinf/test-programs-js/zipball/master JSLintBenchmark JSLintBenchmark/exported
+        open http://.../JSLintBenchmark/exported/index.sample.html
+        # Look for messages in browser console.
 
-    commonjs --script serve https://github.com/pinf/test-programs-js/zipball/master --reloading --port 8081 CanvasGraphics
-    open http://localhost:8081/
+Programs that run in the browser (some with a server component) via the
+[PINF JavaScript Program Server module](https://github.com/pinf/loader-js/blob/master/lib/pinf-loader-js/modules/pinf/program-server.js):
+
+  * [Canvas Graphics](https://github.com/pinf/test-programs-js/tree/master/CanvasGraphics) with plain JavaScript library dependency:
+
+        commonjs --platform node --script serve https://github.com/pinf/test-programs-js/zipball/master --reloading --port 8081 CanvasGraphics
+        open http://localhost:8081/
 
 
 Automated Testing
 =================
 
-The programs in this project make a great test suite for platforms. The following will run
-various programs against available and applicable platforms:
+The programs in this project make a great test suite for the PINF JavaScript Loader, the loader's adapters and the platform
+implementations. The following will run various programs against available and applicable platforms:
 
     # All tests
-    commonjs --script test https://github.com/pinf/test-programs-js/zipball/master
+    commonjs --platform node --script test https://github.com/pinf/test-programs-js/zipball/master
     
     # Specific test
-    commonjs --script test https://github.com/pinf/test-programs-js/zipball/master portable-HelloWorld.js
+    commonjs --platform node --script test https://github.com/pinf/test-programs-js/zipball/master portable-HelloWorld.js
 
 
 Development
@@ -133,10 +143,14 @@ Replace `https://github.com/pinf/test-programs-js/zipball/master` with `/pinf/wo
 in the commands above.
 
 
-Support & Feedback
-==================
+Support, Feedback & News
+========================
 
-Developer mailing list: [http://groups.google.com/group/pinf-dev/](http://groups.google.com/group/pinf-dev/)
+Mailing list: [http://groups.google.com/group/pinf-dev/](http://groups.google.com/group/pinf-dev/)
+
+Twitter: [http://twitter.com/pinf](http://twitter.com/pinf)
+
+Blog: [http://christophdorn.com/Blog/](http://christophdorn.com/Blog/)
 
 
 TODO
