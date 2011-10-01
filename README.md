@@ -48,8 +48,8 @@ CONTRIBUTE: If any of the programs below do not work on the indicated platforms 
 [API adapters](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter) to bring full
 support to all platforms (where possible).
 
-Portable CLI
-------------
+Portable
+--------
 
 Programs that run from the command line on all platforms.
 
@@ -69,10 +69,6 @@ A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/
 [JSLint Benchmark](https://github.com/pinf/test-programs-js/tree/master/JSLintBenchmark):
 
     commonjs https://github.com/pinf/test-programs-js/zipball/master JSLintBenchmark
-
-Simple command-line [URL Fetcher](https://github.com/pinf/test-programs-js/tree/master/URLFetcher) (**Currently only works on `node` due to missing APIs on other platforms.**):
-
-    commonjs https://github.com/pinf/test-programs-js/zipball/master URLFetcher
 
 
 Browser
@@ -108,6 +104,16 @@ Programs that run in the browser (some with a server component) via the
 
         commonjs --platform node --script serve https://github.com/pinf/test-programs-js/zipball/master --reloading --port 8081 CanvasGraphics
         open http://localhost:8081/
+
+Platform: `node`
+----------------
+
+Programs that run from the command line on the `node` platform.
+
+Simple [URL Fetcher](https://github.com/pinf/test-programs-js/tree/master/URLFetcher) 
+(*Will run on all platforms once [API adapters](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter) are complete.*):
+
+    commonjs --platform node https://github.com/pinf/test-programs-js/zipball/master URLFetcher
 
 
 Automated Testing
