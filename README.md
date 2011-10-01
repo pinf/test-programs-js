@@ -39,6 +39,10 @@ Make sure it works:
 
     commonjs -h
 
+*NOTE: When running the programs below a `.pinf_packages` folder is created in your current
+working directory which holds the downloaded dependencies. To keep dependencies centrally
+create a folder at `/pinf/pinf_packages`.*
+
 
 Test/Example Programs
 =====================
@@ -169,6 +173,7 @@ Priority: High
     * Resolve platform level bugs.
     * Complete adapters: [https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter)
   * Remove NPM dependency from CanvasGraphics example so we can make it portable.
+  * Configurable `/pinf/pinf_packages` path.
   * `node` specific demos (with and without leveraging NPM)
   * `gpsee` specific demos
   * `v8cgi` specific demos
