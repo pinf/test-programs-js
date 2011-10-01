@@ -1,20 +1,20 @@
 {
     "uid": "http://github.com/pinf/test-programs-js/AdditionalLoad/",
     "main": "main.js",
-    "mappings": {
-        "common": {
-            "id": "github.com/pinf/test-packages-js/",
-            "path": "Common"
-        }
-    },
     "contexts": {
         "top": {
             "/main": {
                 "load": {
-                    "/additional": {
+                    "/lib/*": {
                     }
                 }
             }
+        }
+    },
+    "mappings": {
+        "common": {
+            "id": "github.com/pinf/test-packages-js/",
+            "path": "Common"
         }
     }
 }

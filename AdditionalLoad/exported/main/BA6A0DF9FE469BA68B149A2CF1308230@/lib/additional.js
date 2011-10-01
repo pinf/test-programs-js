@@ -1,4 +1,4 @@
-require.memoize(bravojs.realpath(bravojs.mainModuleDir + '/BA6A0DF9FE469BA68B149A2CF1308230@/additional'), ['common/greetings'], function (require, exports, module) {
+require.memoize(bravojs.realpath(bravojs.mainModuleDir + '/BA6A0DF9FE469BA68B149A2CF1308230@/lib/additional'), ['common/greetings'], function (require, exports, module) {
 
 var GREETINGS = require("common/greetings");
 
@@ -18,4 +18,4 @@ exports.helloWorld = function()
 }
 
 });
-__bravojs_loaded_moduleIdentifier = bravojs.realpath(bravojs.mainModuleDir + '/BA6A0DF9FE469BA68B149A2CF1308230@/additional');
+__bravojs_loaded_moduleIdentifier = bravojs.realpath(bravojs.mainModuleDir + '/BA6A0DF9FE469BA68B149A2CF1308230@/lib/additional');
