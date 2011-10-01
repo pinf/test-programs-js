@@ -105,6 +105,12 @@ Programs that run in the browser in exported form (`http://.../` below refers to
         open http://.../JSLintBenchmark/exported/index.sample.html
         # Look for messages in browser console.
 
+  * [Module Source Formats](https://github.com/pinf/test-programs-js/tree/master/ModuleSourceFormats):
+
+        commonjs --platform node --script export https://github.com/pinf/test-programs-js/zipball/master ModuleSourceFormats ModuleSourceFormats/exported
+        open http://.../ModuleSourceFormats/exported/index.sample.html
+        # Look for messages in browser console.
+
 Programs that run in the browser (some with a server component) via the
 [PINF JavaScript Program Server module](https://github.com/pinf/loader-js/blob/master/lib/pinf-loader-js/modules/pinf/program-server.js):
 
