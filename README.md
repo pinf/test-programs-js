@@ -64,16 +64,18 @@ Programs that run on all platforms (command-line and in-browser):
 
 Run the programs via the Demo Program Runner included in this project:
 
-    commonjs --platform node https://github.com/pinf/test-programs-js/zipball/master --port 8081 HelloWorld
+    commonjs -v --platform node https://github.com/pinf/test-programs-js/zipball/master --port 8081 HelloWorld
 
 This will run the program once on the **command line**, export it for **static serving** and start a development
 server that will **dynamically load the program into a browser** with every refresh.
 
 To run the programs (in command-line mode) on various platforms (without the browser stuff) use:
 
-    commonjs --platform <PlatformAlias> https://github.com/pinf/test-programs-js/zipball/master HelloWorld
+    commonjs -v --platform <PlatformAlias> https://github.com/pinf/test-programs-js/zipball/master HelloWorld
 
 Where `<PlatformAlias>` is any of `node`, `gpsee`, `v8cgi`, `narwhal` or `ringo`.
+
+Drop the `-v` to omit the loader progress output.
 
 **NOTE: Currently requires running with `--platform node` (default) ONCE first to download dependencies due to incomplete 
 [API adapters](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter) for the other platforms.**
