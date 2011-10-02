@@ -26,7 +26,17 @@ exports.main = function(env)
 	]), function()
 	{
         module.print("Done!\n");
+
+        if (typeof env.onDone === "function")
+        {
+        	env.onDone();
+        }
 	});
+
+    if (typeof env.onDone === "function")
+    {
+    	return env.onDone;
+    }
 }
 
 

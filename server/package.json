@@ -1,0 +1,29 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/server/",
+    "engines": [
+        "node"
+    ],
+    "main": "server.js",
+    "scripts": {
+        "serve": {
+            "id": "github.com/pinf/server-js/"
+        }
+    },
+    "mappings": {
+        "pinf": {
+            "id": "pinf.org/loader"
+        },
+        "modules": {
+            "id": "github.com/pinf/modules-js/"
+        },
+        "server": {
+            "id": "github.com/pinf/server-js/"
+        },
+        "connect-dispatch": {
+            "id": "github.com/caolan/dispatch/"
+        },
+        "loader": {
+            "id": "github.com/pinf/loader-js/"
+        }
+    }
+}

@@ -55,79 +55,43 @@ support to all platforms (where possible).
 Portable
 --------
 
-Programs that run from the command line on all platforms.
+Programs that run on all platforms (command-line and in-browser):
+
+  * `HelloWorld` - A bare-bones Hello World with a dependency. See [./HelloWorld](https://github.com/pinf/test-programs-js/tree/master/HelloWorld)
+  * `AdditionalLoad` - Additional code loading with a dependency. See [./AdditionalLoad](https://github.com/pinf/test-programs-js/tree/master/AdditionalLoad)
+  * `JSLintBenchmark` - JSLint Benchmark. See [./JSLintBenchmark](https://github.com/pinf/test-programs-js/tree/master/JSLintBenchmark)
+  * `ModuleSourceFormats` - Module Source Formats. See [./ModuleSourceFormats](https://github.com/pinf/test-programs-js/tree/master/ModuleSourceFormats)
+
+Run the programs via the Demo Program Runner included in this project:
+
+    commonjs --platform node https://github.com/pinf/test-programs-js/zipball/master --port 8081 HelloWorld
+
+This will run the program **once on the command line**, export it for **static serving** and start a development
+server that will **dynamically load the program into a browser** with every refresh.
+
+To run the programs (in command-line mode) on various platforms (without the browser stuff) use:
+
+    commonjs --platform <PlatformAlias> https://github.com/pinf/test-programs-js/zipball/master HelloWorld
+
+Where `<PlatformAlias>` is any of `node`, `gpsee`, `v8cgi`, `narwhal` or `ringo`.
 
 **NOTE: Currently requires running with `--platform node` (default) ONCE first to download dependencies due to incomplete 
 [API adapters](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter) for the other platforms.**
 
-You can select any of `node`, `gpsee`, `v8cgi`, `narwhal` or `ringo` via `commonjs --platform <PlatformAlias> ...`.
-
-A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld) with a dependency:
-
-    commonjs https://github.com/pinf/test-programs-js/zipball/master HelloWorld
-
-[Additional code loading](https://github.com/pinf/test-programs-js/tree/master/AdditionalLoad) with a dependency:
-
-    commonjs https://github.com/pinf/test-programs-js/zipball/master AdditionalLoad
-
-[JSLint Benchmark](https://github.com/pinf/test-programs-js/tree/master/JSLintBenchmark):
-
-    commonjs https://github.com/pinf/test-programs-js/zipball/master JSLintBenchmark
-
-[Module Source Formats](https://github.com/pinf/test-programs-js/tree/master/ModuleSourceFormats):
-
-    commonjs https://github.com/pinf/test-programs-js/zipball/master ModuleSourceFormats
-
-
-Browser
--------
-
-*NOTE: The exporting or serving of these programs is currently only supported on `--platform node` due to incomplete 
-[API adapters](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter) for the other platforms.* 
-
-Programs that run in the browser in exported form (`http://.../` below refers to a virtual host setup to serve the exported files):
-
-  * A bare-bones [Hello World](https://github.com/pinf/test-programs-js/tree/master/HelloWorld) with a dependency:
-
-        commonjs --platform node --script export https://github.com/pinf/test-programs-js/zipball/master HelloWorld HelloWorld/exported
-        open http://.../HelloWorld/exported/index.sample.html
-        # Look for messages in browser console.
-
-  * [Additional code loading](https://github.com/pinf/test-programs-js/tree/master/AdditionalLoad) with a dependency:
-
-        commonjs --platform node --script export https://github.com/pinf/test-programs-js/zipball/master AdditionalLoad AdditionalLoad/exported
-        open http://.../AdditionalLoad/exported/index.sample.html
-        # Look for messages in browser console.
-
-  * [JSLint Benchmark](https://github.com/pinf/test-programs-js/tree/master/JSLintBenchmark):
-
-        commonjs --platform node --script export https://github.com/pinf/test-programs-js/zipball/master JSLintBenchmark JSLintBenchmark/exported
-        open http://.../JSLintBenchmark/exported/index.sample.html
-        # Look for messages in browser console.
-
-  * [Module Source Formats](https://github.com/pinf/test-programs-js/tree/master/ModuleSourceFormats):
-
-        commonjs --platform node --script export https://github.com/pinf/test-programs-js/zipball/master ModuleSourceFormats ModuleSourceFormats/exported
-        open http://.../ModuleSourceFormats/exported/index.sample.html
-        # Look for messages in browser console.
-
-Programs that run in the browser (some with a server component) via the
-[PINF JavaScript Program Server module](https://github.com/pinf/loader-js/blob/master/lib/pinf-loader-js/modules/pinf/program-server.js):
-
-  * [Canvas Graphics](https://github.com/pinf/test-programs-js/tree/master/CanvasGraphics) with plain JavaScript library dependency:
-
-        commonjs --platform node --script serve https://github.com/pinf/test-programs-js/zipball/master --reloading --port 8081 CanvasGraphics
-        open http://localhost:8081/
 
 Platform: `node`
 ----------------
 
-Programs that run from the command line on the `node` platform.
+Programs leveraging the `node` platform:
 
-Simple [URL Fetcher](https://github.com/pinf/test-programs-js/tree/master/URLFetcher) 
-(*Will run on all platforms once [API adapters](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter) are complete.*):
+  * Simple cli [URL Fetcher](https://github.com/pinf/test-programs-js/tree/master/URLFetcher) 
+    (*Will run on all platforms once [API adapters](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter) are complete.*):
+    
+        commonjs --platform node https://github.com/pinf/test-programs-js/zipball/master URLFetcher
 
-    commonjs --platform node https://github.com/pinf/test-programs-js/zipball/master URLFetcher
+  * Server + Browser [Canvas Graphics](https://github.com/pinf/test-programs-js/tree/master/CanvasGraphics) with plain JavaScript library dependency:
+
+        commonjs --platform node --script serve https://github.com/pinf/test-programs-js/zipball/master --reloading --port 8081 CanvasGraphics
 
 
 Automated Testing
@@ -184,6 +148,7 @@ Priority: High
     * Complete adapters: [https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter)
   * Remove NPM dependency from CanvasGraphics example so we can make it portable.
   * Configurable `/pinf/pinf_packages` path.
+  * Run exported programs on BravoJS or RequireJS.
   * `node` specific demos (with and without leveraging NPM)
   * `gpsee` specific demos
   * `v8cgi` specific demos

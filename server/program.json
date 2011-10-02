@@ -1,0 +1,29 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/server/",
+    "extends": {
+        "location": "../program.json"
+    },
+    "engines": [
+        "node"
+    ],
+    "boot": "github.com/pinf/test-programs-js/server/",
+    "implements": {
+        "github.com/pinf/server-js/-meta/strawman/vhost/0.1": {
+        }
+    },
+    "packages": {
+        "github.com/pinf/test-programs-js/server/": {
+            "locator": {
+                "location": "./"
+            }
+        },
+        "github.com/caolan/dispatch/": {
+            "locator": {
+                "archive": "https://github.com/caolan/dispatch/zipball/master"
+            },
+            "descriptor": {
+                "native": true
+            }
+        }
+    }
+}

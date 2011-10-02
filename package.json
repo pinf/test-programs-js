@@ -46,5 +46,14 @@
         "modules": {
             "id": "github.com/pinf/modules-js/"
         }
+    },
+    "overlay": {
+        "pinf:node": {
+            "mappings": {
+                "server": {
+                    "id": "github.com/pinf/server-js/"
+                }
+            }
+        }
     }
 }
