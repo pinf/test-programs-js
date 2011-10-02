@@ -62,7 +62,7 @@
         },
         "github.com/pinf/loader-js/": {
             "locator": {
-                "archive": "http://github.com/pinf/loader-js/zipball/v0.2.16"
+                "archive": "http://github.com/pinf/loader-js/zipball/v0.2.18"
             }
         },
         "github.com/pinf/server-js/": {
