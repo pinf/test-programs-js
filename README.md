@@ -84,13 +84,13 @@ Platform: `node`
 
 Programs leveraging the `node` platform:
 
-  * Simple cli [URL Fetcher](https://github.com/pinf/test-programs-js/tree/master/URLFetcher) 
-    (*Will run on all platforms once [API adapters](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter) are complete.*):
+  * Simple command-line URL Fetcher. See [./URLFetcher](https://github.com/pinf/test-programs-js/tree/master/URLFetcher) 
+    (*Will run on all platforms once [API adapters](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter) are complete*):
     
         commonjs --platform node https://github.com/pinf/test-programs-js/zipball/master URLFetcher
-
-  * Server + Browser [Canvas Graphics](https://github.com/pinf/test-programs-js/tree/master/CanvasGraphics) with plain JavaScript library dependency:
-
+  
+  * Server + Browser Canvas Graphics with plain JavaScript library dependency. See [./CanvasGraphics](https://github.com/pinf/test-programs-js/tree/master/CanvasGraphics)
+    
         commonjs --platform node --script serve https://github.com/pinf/test-programs-js/zipball/master --reloading --port 8081 CanvasGraphics
 
 
