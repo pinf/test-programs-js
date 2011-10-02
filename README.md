@@ -66,7 +66,7 @@ Run the programs via the Demo Program Runner included in this project:
 
     commonjs --platform node https://github.com/pinf/test-programs-js/zipball/master --port 8081 HelloWorld
 
-This will run the program **once on the command line**, export it for **static serving** and start a development
+This will run the program once on the **command line**, export it for **static serving** and start a development
 server that will **dynamically load the program into a browser** with every refresh.
 
 To run the programs (in command-line mode) on various platforms (without the browser stuff) use:
