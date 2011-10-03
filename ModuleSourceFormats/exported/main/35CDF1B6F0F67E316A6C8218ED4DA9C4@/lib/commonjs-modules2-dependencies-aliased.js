@@ -1,4 +1,4 @@
-require.memoize(bravojs.realpath(bravojs.mainModuleDir + '/35CDF1B6F0F67E316A6C8218ED4DA9C4@/lib/commonjs-modules2-dependencies-aliased'), ['[object Object]'], function (require, exports, module)
+require.memoize(bravojs.realpath(bravojs.mainModuleDir + '/35CDF1B6F0F67E316A6C8218ED4DA9C4@/lib/commonjs-modules2-dependencies-aliased'), [{"UTIL":"./_util"}], function (require, exports, module)
 {
 	/**
 	 * Comment
