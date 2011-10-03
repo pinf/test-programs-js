@@ -22,7 +22,8 @@ The programs require any one or more of the following JavaScript platforms:
 
 Platform install instructions:
 
-  * [PINF JavaScript Platform for OSX Lion](https://github.com/pinf/platform-js/blob/master/docs/osx-lion.md)
+  * See individual platform projects
+  * [PINF JavaScript Platform for OSX Lion](https://github.com/pinf/platform-js/blob/master/docs/osx-lion.md) (includes all supported platforms)
 
 You also need the [PINF JavaScript Loader](https://github.com/pinf/loader-js). Use
 any one of the following install solutions:
