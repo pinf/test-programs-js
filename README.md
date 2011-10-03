@@ -20,6 +20,10 @@ The programs require any one or more of the following JavaScript platforms:
   * [RingoJS](http://ringojs.org/downloads) - JavaScript runtime based on Mozilla Rhino (Java)
   * Modern Browser
 
+Platform install instructions:
+
+  * [PINF JavaScript Platform for OSX Lion](https://github.com/pinf/platform-js/blob/master/docs/osx-lion.md)
+
 You also need the [PINF JavaScript Loader](https://github.com/pinf/loader-js). Use
 any one of the following install solutions:
 
