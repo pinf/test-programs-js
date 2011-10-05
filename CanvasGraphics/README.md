@@ -1,7 +1,7 @@
 Canvas Graphics Demo
 ====================
 
-This demo show how to run a back-end program and serve a front-end program usable in a browser.
+This demo shows how to run a back-end program and serve a front-end program usable in a browser.
 
 Plain JavaScript library and NPM dependencies are used.
 
