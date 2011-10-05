@@ -26,7 +26,7 @@
         },
         "github.com/pinf/server-js/": {
             "locator": {
-                "archive": "https://github.com/pinf/server-js/zipball/v0.1.16"
+                "archive": "https://github.com/pinf/server-js/zipball/v0.1.17"
             }
         },
         "github.com/caolan/dispatch/": {
@@ -39,7 +39,7 @@
         },
         "github.com/pinf/modules-js/": {
             "locator": {
-                "archive": "https://github.com/pinf/modules-js/zipball/v0.1.12"
+                "archive": "https://github.com/pinf/modules-js/zipball/v0.1.13"
             }
         },
         "github.com/kriskowal/q/": {

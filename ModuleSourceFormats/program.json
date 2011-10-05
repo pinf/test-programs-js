@@ -12,18 +12,18 @@
                 "location": "./"
             }
         },
-        "pinf.org/loader": {
-            "provider": "pinf.org/loader"
+        "pinf.org/loader/": {
+            "provider": "pinf.org/loader/"
         },
-        "nodejs.org": {
-            "provider": "nodejs.org"
+        "nodejs.org/": {
+            "provider": "nodejs.org/"
         },
-        "narwhaljs.org": {
-            "provider": "narwhaljs.org"
+        "narwhaljs.org/": {
+            "provider": "narwhaljs.org/"
         },
         "github.com/pinf/modules-js/": {
             "locator": {
-                "archive": "https://github.com/pinf/modules-js/zipball/v0.1.12"
+                "archive": "https://github.com/pinf/modules-js/zipball/v0.1.13"
             }
         },
         "github.com/kriskowal/q/": {

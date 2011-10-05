@@ -14,7 +14,7 @@
         },
         "github.com/pinf/test-packages-js/": {
             "locator": {
-                "archive": "https://github.com/pinf/test-packages-js/zipball/master"
+                "archive": "https://github.com/pinf/test-packages-js/zipball/v0.1.0"
             }
         }
     }
