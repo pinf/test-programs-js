@@ -147,6 +147,13 @@ Support, Feedback & News
 TODO
 ====
 
+Known Issues
+------------
+
+  * Canvas Graphics demo does not work when downloaded the first time. It works on the second invocation.
+  * `gpsee` segfaults at times (this is being actively worked on)
+  * `node`s event loop seems to hang script termination for ~5 to 10 seconds at times.
+
 Priority: High
 --------------
 
