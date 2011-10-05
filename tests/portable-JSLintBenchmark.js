@@ -10,15 +10,15 @@ exports.run = function(ASSERT, harness)
 
 
 var platforms = [
-         "node",
+        "node",
 // TODO: Switch off warnings as jsonlint.js has tons.
-//         "gpsee",
-         "v8cgi",
+//        "gpsee",
+        "v8cgi",
 // NOTE: It takes WAY too long to parse the jsonlint.js file with the default (java) platform!
-//         "narwhal",
+//        "narwhal",
 // NOTE: It takes WAY too long to parse the jsonlint.js file!
-//         "ringo",
-     ];
+//        "ringo",
+    ];
 
 for (var i=0 ; i<platforms.length ; i++)
 {

@@ -10,12 +10,12 @@ exports.run = function(ASSERT, harness)
 
 
 var platforms = [
-         "node",
-         "gpsee",
-         "v8cgi",
-         "narwhal",
-         "ringo"
-     ];
+        "node",
+        "gpsee",
+        "v8cgi",
+        "narwhal",
+        "ringo"
+    ];
 
 for (var i=0 ; i<platforms.length ; i++)
 {
