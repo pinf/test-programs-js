@@ -66,8 +66,10 @@ Programs that run on all platforms (command-line and in-browser):
   * `AdditionalLoad` - Additional code loading with a dependency. See [./AdditionalLoad](https://github.com/pinf/test-programs-js/tree/master/AdditionalLoad)
   * `JSLintBenchmark` - JSLint Benchmark. See [./JSLintBenchmark](https://github.com/pinf/test-programs-js/tree/master/JSLintBenchmark)
   * `ModuleSourceFormats` - Module Source Formats. See [./ModuleSourceFormats](https://github.com/pinf/test-programs-js/tree/master/ModuleSourceFormats)
+  * `CommonJSAPI` - CommonJS API for packages. See [./CommonJSAPI](https://github.com/pinf/test-programs-js/tree/master/CommonJSAPI)
 
-Run the programs via the Demo Program Runner included in this project:
+Run the programs via the Demo Program Runner included in this project (currently requires `node` until 
+[API adapters](https://github.com/pinf/loader-js/tree/master/lib/pinf-loader-js/adapter) are complete):
 
     commonjs -v --platform node https://github.com/pinf/test-programs-js/zipball/master --port 8081 HelloWorld
 

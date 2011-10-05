@@ -1,0 +1,36 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/CommonJSAPI/",
+    "boot": "github.com/pinf/test-programs-js/CommonJSAPI/",
+    "contexts": {
+        "top": {
+            "github.com/pinf/test-programs-js/CommonJSAPI/": {}
+        }
+    },
+    "packages": {
+        "github.com/pinf/test-programs-js/CommonJSAPI/": {
+            "locator": {
+                "location": "./"
+            }
+        },
+        "github.com/pinf/commonjs-apis/": {
+            "locator": {
+                "archive": "https://github.com/pinf/commonjs-apis/zipball/v0.1.1"
+            }
+        },
+        "nodejs.org/": {
+            "provider": "nodejs.org/"
+        },
+        "code.google.com/p/v8cgi/": {
+            "provider": "code.google.com/p/v8cgi/"
+        },
+        "code.google.com/p/gpsee/": {
+            "provider": "code.google.com/p/gpsee/"
+        },
+        "ringojs.org/": {
+            "provider": "ringojs.org/"
+        },
+        "narwhaljs.org/": {
+            "provider": "narwhaljs.org/"
+        }
+    }
+}

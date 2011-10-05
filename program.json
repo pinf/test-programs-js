@@ -17,6 +17,9 @@
             "location": "./ModuleSourceFormats/program.json"
         },
         {
+            "location": "./CommonJSAPI/program.json"
+        },
+        {
             "location": "./URLFetcher/program.json"
         },
         {

@@ -1,0 +1,9 @@
+{
+    "uid": "http://github.com/pinf/test-programs-js/CommonJSAPI/",
+    "main": "main.js",
+    "mappings": {
+        "commonjs": {
+            "id": "github.com/pinf/commonjs-apis/"
+        }
+    }
+}
