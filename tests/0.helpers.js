@@ -46,6 +46,7 @@ exports.runProgram = function(platformAlias, programName)
 		{
 			case "gpsee":
 				command += " -f " + loaderPath + " --";
+				break;
 			default:
 				command += " " + loaderPath;
 				break;
@@ -62,7 +63,7 @@ exports.runProgram = function(platformAlias, programName)
 			command += programName;
 		}
 
-		module.print("\0magenta(=> Running program '" + programName + "' on platform '" + platformAlias + "' with command [" + command + "]:\0)\n");
+		module.print("\n\0magenta(=> Running program '\0bold(" + programName + "\0)' on platform '\0bold(" + platformAlias + "\0)' with command [" + command + "]:\0)\n");
 		
 		var time = new Date().getTime();
 
@@ -76,7 +77,7 @@ exports.runProgram = function(platformAlias, programName)
 
 			module.print(stdout)
 
-			module.print("\0magenta(<= Test took " + (((new Date().getTime()) - time)/1000) + " seconds.\0)\n");
+			module.print("\0magenta(<= Test took " + (((new Date().getTime()) - time)/1000) + " seconds.\0)\n\n");
 
 			result.resolve();
 		});

@@ -18,6 +18,15 @@
         "nodejs.org/": {
             "provider": "nodejs.org/"
         },
+        "code.google.com/p/v8cgi/": {
+            "provider": "code.google.com/p/v8cgi/"
+        },
+        "code.google.com/p/gpsee/": {
+            "provider": "code.google.com/p/gpsee/"
+        },
+        "ringojs.org/": {
+            "provider": "ringojs.org/"
+        },
         "narwhaljs.org/": {
             "provider": "narwhaljs.org/"
         },

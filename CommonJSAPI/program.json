@@ -17,6 +17,9 @@
                 "archive": "https://github.com/pinf/commonjs-apis/zipball/v0.1.1"
             }
         },
+        "pinf.org/loader/": {
+            "provider": "pinf.org/loader/"
+        },
         "nodejs.org/": {
             "provider": "nodejs.org/"
         },
