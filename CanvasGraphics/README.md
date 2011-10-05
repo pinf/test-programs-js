@@ -37,7 +37,7 @@ The front-end program may be exported to static files instead of loading it via 
 
     commonjs --platform node --script export https://github.com/pinf/test-programs-js/zipball/master CanvasGraphics/programs/BrowserFrontend CanvasGraphics/programs/BrowserFrontend/exported
 
-The back-end program is setup to also serve this exported program (thanks to a symlink in `./www`).
+The back-end program is setup to also serve this exported program.
 
     commonjs --platform node --script serve https://github.com/pinf/test-programs-js/zipball/master --port 8081 CanvasGraphics
     open http://localhost:8081/exported/

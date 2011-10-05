@@ -32,6 +32,15 @@ exports.main = function(options)
                     }
                 ])),
 
+                "/exported/": function(request, response)
+                {
+        			var data = FILE.read(FILE.dirname(module.id) + "/www/index.html");
+
+        			data = data.replace(/"\/programs\/ui\.js"/, "\"/main.js\"");
+
+        			response.end(data);
+                },
+
                 "/.*": CONNECT.static(FILE.dirname(module.id) + "/www", {
 		            maxAge: 0
 		        })
