@@ -2,7 +2,7 @@
     "uid": "http://github.com/pinf/test-programs-js/",
     "extends": [
         {
-            "location": "https://raw.github.com/pinf/server-js/v0.1.16/program.packages.json"
+            "location": "https://raw.github.com/pinf/server-js/v0.1.17/program.packages.json"
         },
         {
             "location": "./HelloWorld/program.json"
