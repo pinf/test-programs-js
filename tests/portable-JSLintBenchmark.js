@@ -11,7 +11,7 @@ exports.run = function(ASSERT, harness)
 
 var platforms = [
         "node",
-// TODO: Switch off warnings as jsonlint.js has tons.
+// TODO: Switch off warnings as jsonlint.js has tons. Can use '-SW' once we can pass via 'commonjs --platform gpsee -SW -- .../program.json'
 //        "gpsee",
         "v8cgi",
 // NOTE: It takes WAY too long to parse the jsonlint.js file with the default (java) platform!
