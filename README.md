@@ -1,3 +1,5 @@
+**EARLY STALLED EXPLORATION**
+
 Test Programs for the PINF JavaScript Loader
 ============================================
 
