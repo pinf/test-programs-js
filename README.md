@@ -1,5 +1,5 @@
-Test Programs for the PINF JavaScript Platform
-==============================================
+Test Programs for the PINF JavaScript Loader
+============================================
 
 **Status: BETA**
 
